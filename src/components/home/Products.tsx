@@ -69,7 +69,7 @@ import { playDisplay } from '../fonts'
 
 export default function ProductSection() {
     return (
-        <section className="bg-white py-16">
+        <section className="bg-white pt-16">
             <div className="max-w-7xl min-h-[600px] relative mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-start ">
 
