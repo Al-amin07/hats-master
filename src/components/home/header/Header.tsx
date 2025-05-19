@@ -62,7 +62,7 @@ export default function Header() {
 
                     >
                         <Image src={img1} alt='vsdv' className='h-full w-full' fill />
-                        <div className="flex items-center relative z-30 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/30">
+                        <div className="flex items-center relative z-30 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/40">
                             <div className="md:px-24  w-full 
               ">
                                 <h1 className="text-2xl  font-semibold  text-white   text-right  lg:text-[40px]">
@@ -89,7 +89,7 @@ export default function Header() {
 
                     >
                         <Image src={img2} alt='vsdv' className='h-full w-full' fill />
-                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/30">
+                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/40">
                             <div className="md:px-24  w-full 
               ">
                                 <h1 className="text-2xl uppercase font-semibold  text-white   text-right  lg:text-[40px]">
@@ -114,7 +114,7 @@ export default function Header() {
 
                     >
                         <Image src={img3} alt='vsdv' className='h-full w-full' fill />
-                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/30">
+                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/40">
                             <div className="md:px-24  w-full 
               ">
                                 <h1 className="text-3xl uppercase font-semibold  text-white   text-right  lg:text-[40px]">

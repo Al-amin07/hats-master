@@ -17,7 +17,7 @@ export default function Navbar() {
     const pathname = usePathname()
     const navLinks = [
         { href: "/", label: "HOME" },
-        { href: "/", label: "PRODUCT" },
+        { href: "#", label: "PRODUCT" },
         { href: "/process", label: "OUR PROCESS" },
         { href: "/blog", label: "BLOG" },
         { href: "/about", label: "ABOUT" },
@@ -45,11 +45,11 @@ export default function Navbar() {
                     </Link>
 
                     {/* Mobile menu button */}
-                    <div className="flex lg:hidden">
+                    <div className="flex  lg:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type="button"
-                            className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
+                            className="text-gray-500 cursor-pointer dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
                             aria-label="Toggle menu"
                         >
                             {!isOpen ? (
@@ -99,7 +99,7 @@ export default function Navbar() {
                                     }
                                 }}
 
-                                className={`my-2  ${scrolled || pathname !== '/' ? 'text-black   ' : 'text-white '}   hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0`}
+                                className={`my-2  ${scrolled || pathname !== '/' ? 'text-black   ' : 'text-white '}   hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0  ${pathname === link.href && 'underline underline-offset-[6px]'}`}
                             >
                                 {link.label}
                             </Link>

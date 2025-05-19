@@ -3,6 +3,7 @@ import img2 from '@/assets/process/2.jpg'
 import img3 from '@/assets/process/3.jpg'
 // import img4 from '@/assets/process/4.jpg'
 import img5 from '@/assets/process/5.jpg'
+import ManufacturingProcess from '@/components/home/MenufacturingProcess'
 import Image from 'next/image'
 import React from 'react'
 
@@ -62,6 +63,8 @@ export default function ProcessPage() {
                     <Image src={img5} alt='logo' width={700} height={700} className='w-full h-[500px] md:h-[550px]' />
                 </div>
             </div>
+            <hr className=' my-16 text-black'/>
+            <ManufacturingProcess />
             {/* 5th */}
             {/* <div className='flex flex-col lg:flex-row  items-center lg:gap-12 gap-6  min-h-[700px]'>
          <div className='flex-1 '>

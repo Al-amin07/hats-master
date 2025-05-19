@@ -10,13 +10,13 @@ import SourcingSection from "@/components/home/Sourceing";
 
 export default function Home() {
   return (
-    <div className="space-y-20  mx-auto">
+    <div className="space-y-[70px]  mx-auto">
       <Header />
       <About />
       <ProductSection />
       <MenuFacture />
       <SourcingSection />
-      <MenufacturingProcess />
+      {/* <MenufacturingProcess /> */}
       <Testimonial />
 
     </div>

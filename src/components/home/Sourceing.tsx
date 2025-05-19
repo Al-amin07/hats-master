@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sourcingImg from "@/assets/banner/b12.jpg"; // Rename your uploaded image and place it in /public
+import sourcingImg from "@/assets/banner/b1.jpg"; // Rename your uploaded image and place it in /public
 import { MdOutlineFindInPage } from "react-icons/md";
 import { rajdhani } from "../fonts";
 import { MdPersonalInjury } from "react-icons/md";
@@ -36,23 +36,18 @@ const SourcingSection = () => {
                         <Image
                             src={sourcingImg}
                             alt="Team discussing sourcing"
-                            height={700}
-                            width={800}
-                            className="w-full h-auto object-cover "
+                           
+                            className="w-full h-[600px] object-cover "
 
                         />
                     </div>
-                    <div className="absolute bottom-0 right-0 bg-red-600 text-white max-w-xs ">
-                        <p className="text-lg max-w-[200px] p-6 font-semibold leading-snug">
-                            We specialize in sourcing products from Vietnam
-                        </p>
-                    </div>
+                   
                 </div>
 
                 {/* Right side with text content */}
                 <div className={`flex-1 ${rajdhani.className} p-6 md:p-0`}>
                     <h2 className="text-3xl w-3/4  md:text-4xl font-semibold text-gray-900 mb-6">
-                        <span className="text-red-600 ">—</span> Why Choosing a Sourcing
+                       Why Choosing a Sourcing
                         Agency in Bangladesh
                     </h2>
 

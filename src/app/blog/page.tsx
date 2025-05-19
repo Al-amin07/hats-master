@@ -46,7 +46,7 @@ export default function BlogPage() {
                     height={600}
                     className=" object-cover"
                 />
-                <div className="absolute top-6 left-6 bg-white text-black p-4 shadow-md rounded-lg max-w-[220px]">
+                <div className="absolute top-1/2 -translate-y-1/2 left-6 bg-white text-black p-4 shadow-md rounded-lg max-w-[220px]">
                     <div className="flex items-center gap-2">
                         <span className="text-red-600 text-5xl">👍</span>
                         <p className="text-sm font-semibold leading-tight">

@@ -33,8 +33,8 @@ export default function ManufacturingProcess() {
     ];
 
     return (
-        <section className="py-10  bg-white text-black">
-            <h2 className="text-3xl font-semibold text-center mb-16">Manufacturing Process</h2>
+        <section className="  bg-white text-black">
+            <h2 className="text-3xl font-semibold text-center uppercase mb-16">Manufacturing Process</h2>
             <div className="grid md:grid-cols-2 gap-2 max-w-5xl mx-auto px-4">
                 {steps.map((step) => (
                     <div key={step.id} className="text-center hover:shadow-2xl transition-shadow duration-500 rounded-lg cursor-pointer px-4 py-4">

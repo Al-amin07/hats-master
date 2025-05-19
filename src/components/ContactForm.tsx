@@ -1,21 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 
-// import { useState } from "react";
 import { toast } from "sonner";
 
 export default function ContactForm() {
-//       const [state, setState] = useState({
-//     "id-b02": "",
-//   })
 
-//   const handleChange = (evt: React.FormEvent<HTMLFormElement>) => {
-//     const value = evt.target.value
-//     setState({
-//       ...state,
-//       [evt.target.name]: value,
-//     })
-//   }
   const handleForm = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   const toastId = toast.loading('Sending email....')
@@ -29,15 +18,16 @@ export default function ContactForm() {
   // your logic here
   try {
     toast.success('Email send successfully. wait for response', {id: toastId})
+    form.reset()
   } catch (error: any) {
     toast.error(error?.message || 'Failed to send email', {id: toastId})
     console.log(error)
   }
 };
   return (
-    <section className=" py-16 max-w-3xl 
+    <section className="  max-w-3xl 
      mx-auto">
-      <h2 className="text-3xl font-semibold mb-10">Contact</h2>
+      
 
       <form onSubmit={handleForm} className="space-y-6">
         {/* Name & Email */}
@@ -93,7 +83,7 @@ export default function ContactForm() {
         {/* Submit Button */}
         <button
           type="submit"
-          className="bg-black cursor-pointer text-white px-8 py-2 rounded-full hover:bg-gray-800 transition"
+          className="bg-black hover:bg-white hover:text-black cursor-pointer text-white px-8 py-2 rounded-full  transition-all duration-500 border border-transparent hover:border-black"
         >
           Send
         </button>

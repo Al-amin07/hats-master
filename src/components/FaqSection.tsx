@@ -48,7 +48,7 @@ export default function FAQSection() {
   <div>
       <section className="bg-[#d7e6e4] max-w-5xl mx-auto ">
       <h2 className="text-2xl py-16 md:text-3xl font-serif text-center ">
-        Frequently asked questions
+     Frequently Asked Questions (FAQ) 
       </h2>
 
       <div className=" divide-y divide-gray-200">
@@ -70,7 +70,7 @@ export default function FAQSection() {
               />
             </button>
             {openIndex === index && (
-              <div className=" pb-6 mt-3 text-sm text-gray-700">{faq.answer}</div>
+              <div className=" pb-6 mt-2.5 text-sm text-gray-700">{faq.answer}</div>
             )}
           </div>
         ))}
