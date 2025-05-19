@@ -6,9 +6,12 @@ import { BsArrowRight } from 'react-icons/bs'
 // import WhyChooseUs from '@/components/home/WhyChooseUs'
 import { playDisplay } from '@/components/fonts'
 import WhyChooseUs from '@/components/WhyChooseUs'
+import WeManageItAll from '@/components/WeManageItAll'
+import { Button } from '@/components/ui/button'
+
 export default function AboutUsPge() {
     return (
-        <div className='container  mx-auto mt-28 px-8'>
+        <div className='container  mx-auto mt-28 lg:px-8'>
             <div className=' flex flex-col mb-20 md:flex-row items-center gap-16'>
                 <div className='flex-1'>
                     <Image src={t1} alt='Team' height={500} width={600} />
@@ -22,15 +25,18 @@ export default function AboutUsPge() {
                         <p className='text-sm text-slate-600'>Our friendly and experienced staff will ensure that all aspects of your order are looked after from the first sample approval to the final delivery of your stock. </p>
                         <p className='text-sm text-slate-600'>Enquire now and bring your ideas to life!</p>
                     </div>
-
-                    <button className='flex items-center gap-2'>
-                        ENQUIRE
-                        <BsArrowRight />
-                    </button>
+        <Button variant={'outline'} className='hover:bg-black text-slate-600 hover:text-white transition-colors duration-500 mt-5 text-xs'>
+            ENQUIRE
+                        <BsArrowRight /> 
+        </Button>
+                  
                 </div>
             </div>
             <h1 className={`text-6xl font-semibold uppercase mb-5 ${playDisplay.className}`}>Why <br /> we are  different</h1>
-            <WhyChooseUs />
+           <div className='space-y-12'>
+             <WhyChooseUs />
+            <WeManageItAll />
+           </div>
         </div>
     )
 }

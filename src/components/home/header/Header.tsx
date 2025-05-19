@@ -75,7 +75,7 @@ export default function Header() {
                                 <Link href={'/process'} className='flex justify-center md:justify-between items-center  lg:max-w-md ml-auto mt-6 border-0 md:border p-4 rounded-md cursor-pointer text-white hover:bg-black  hover:border-black transition-colors duration-500'>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Consalt </h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Design</h1> <span><GoDotFill size={20} /></span>
-                                    <h1 className='text-sm md:text-xl uppercase font-medium'>Product</h1> <span><GoDotFill size={20} /></span>
+                                    <h1 className='text-sm md:text-xl uppercase font-medium'>Produce</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Deliver</h1>
                                 </Link>
                             </div>
@@ -100,7 +100,7 @@ export default function Header() {
                                 <Link href={'/process'} className='flex justify-between items-center max-w-md ml-auto mt-6 border p-4 rounded-md cursor-pointer text-white hover:bg-black hover:border-black transition-colors duration-500'>
                                     <h1 className='text-xl uppercase font-medium'>Consalt </h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-xl uppercase font-medium'>Design</h1> <span><GoDotFill size={20} /></span>
-                                    <h1 className='text-xl uppercase font-medium'>Product</h1> <span><GoDotFill size={20} /></span>
+                                    <h1 className='text-xl uppercase font-medium'>Produce</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-xl uppercase font-medium'>Deliver</h1>
                                 </Link>
                             </div>
@@ -125,7 +125,7 @@ export default function Header() {
                                 <Link href={'/process'} className='flex justify-between items-center max-w-md ml-auto mt-6 border p-4 rounded-md cursor-pointer text-white hover:bg-black hover:border-black transition-colors duration-500'>
                                     <h1 className='text-xl uppercase font-medium'>Consalt </h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-xl uppercase font-medium'>Design</h1> <span><GoDotFill size={20} /></span>
-                                    <h1 className='text-xl uppercase font-medium'>Product</h1> <span><GoDotFill size={20} /></span>
+                                    <h1 className='text-xl uppercase font-medium'>Produce</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-xl uppercase font-medium'>Deliver</h1>
                                 </Link>
                             </div>
@@ -133,32 +133,7 @@ export default function Header() {
                     </div>
 
                 </SwiperSlide>
-                {/* <SwiperSlide>
-
-          <div  className="w-full  min-h-screen "
-
-          >
-             <Image src={img3} alt='vsdv' className='h-full w-full' height={700} width={1200}/>
-            <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/30">
-              <div className="md:px-24  w-full 
-              ">
-                <h1 className="text-3xl uppercase font-semibold  text-white   text-right  lg:text-[40px]">
-                     We design, sample and manufacture <br />
-                  with verified factory partners
-                </h1>
-
-                <div className='flex justify-between items-center max-w-md ml-auto mt-6 border p-4 rounded-md cursor-pointer text-white hover:bg-black hover:border-black transition-colors duration-500'>
-                  <h1 className='text-xl uppercase font-medium'>Consalt </h1> <span><GoDotFill size={20} /></span>
-                  <h1 className='text-xl uppercase font-medium'>Design</h1> <span><GoDotFill size={20} /></span>
-                  <h1 className='text-xl uppercase font-medium'>Product</h1> <span><GoDotFill size={20} /></span>
-                  <h1 className='text-xl uppercase font-medium'>Deliver</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </SwiperSlide>
-     */}
+ 
             </Swiper>
             <div className="h-16 flex  items-center  rounded-b-2xl  bg-[#3d3d3d] opacity-60 relative">
                 {/* Swiper will inject the scrollbar drag element here */}
