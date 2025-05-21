@@ -29,7 +29,7 @@ export default function ManuFacture() {
         <h1 className='text-4xl text-black font-bold uppercase'>Bangladesh</h1>
         {/* <h2 className="text-3xl font-bold text-black mb-4">Bangladesh</h2> */}
         <p className="text-xs md:text-sm mb-4 mt-5  leading-relaxed">
-     At Hatsmaster, we believe that quality isn&apos;t just a standard it&apos;s a promise. As a dedicated sourcing specialist and buying agent for top-tier importers in the United States, Japan, France, and Australia, we ensure every product meets the highest expectations. Backed by a reliable network of manufacturing partners across South Asia and our standout role as a Private Label Cap Manufacturer in Bangladesh, we offer an exceptional range of custom Caps, Hats, and Beanies. 
+     We believe that quality isn&apos;t just a standard it&apos;s a promise. As a dedicated sourcing specialist and buying agent for top-tier importers in the United States, Japan, France, and Australia, we ensure every product meets the highest expectations. Backed by a reliable network of manufacturing partners across South Asia and our standout role as a Private Label Cap Manufacturer in Bangladesh, we offer an exceptional range of custom Caps, Hats, and Beanies. 
 
         </p>
         <p className="text-xs md:text-sm leading-relaxed mb-5">

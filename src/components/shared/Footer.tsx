@@ -18,8 +18,8 @@ export default function Footer() {
 
     ]
     return (
-        <footer className="bg-black text-white dark:bg-gray-900 px-16 py-16 lg:py-24">
-            <div className='grid md:grid-cols-3 gap-y-6 lg:grid-cols-4'>
+        <footer className="bg-black text-white min-h-[calc(100vh-70px)] dark:bg-gray-900  py-16 lg:py-24">
+            <div className='grid md:grid-cols-3 gap-y-6 lg:grid-cols-4 px-24'>
 
                 <div>
                     <h1 className=' text-xs font-bold mb-6'>Assistant</h1>
@@ -50,7 +50,7 @@ export default function Footer() {
 
 
 
-                <div className=' flex flex-col items-end col-span-1 lg:col-span-2'>
+                <div className=' flex  flex-col items-end col-span-1 lg:col-span-2'>
                     <div className=' min-w-sm mx-auto'>
                         <h1 className=' text-xs font-bold  mb-6'>Keep in Touch</h1>
                         <form action="" className='mb-5 relative'>
@@ -65,6 +65,10 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+                
+            </div>
+            <div className='w-full border-b-4 mt-10'>
+
             </div>
         </footer>
     )

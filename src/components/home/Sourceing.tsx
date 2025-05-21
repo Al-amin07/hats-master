@@ -1,34 +1,40 @@
 import Image from "next/image";
 import sourcingImg from "@/assets/banner/b1.jpg"; // Rename your uploaded image and place it in /public
-import { MdOutlineFindInPage } from "react-icons/md";
+
 import { rajdhani } from "../fonts";
-import { MdPersonalInjury } from "react-icons/md";
-import { IoSearch } from "react-icons/io5";
+
 
 const SourcingSection = () => {
-    const details = [
-        {
-            icon: <MdOutlineFindInPage className="text-5xl text-red-600" />,
+    const advantages = [
+  {
+    id: 1,
+    title: "Cost-Effective Manufacturing with Skilled Labor",
+    desc: "Bangladesh offers affordable and high-quality cap and hat manufacturing, with a skilled workforce experienced in private label headwear."
+  },
+  {
+    id: 2,
+    title: "Second-Largest Apparel Exporter Globally",
+    desc: "As the world’s second-largest apparel exporter, Bangladesh is a reliable sourcing and manufacturing hub for fashion hats, beanies, baseball caps, and more."
+  },
+  {
+    id: 3,
+    title: "Sustainable and Ethical Headwear Production",
+    desc: "Home to many green-certified factories, it’s a top choice for brands seeking sustainable and ethical headwear production."
+  },
+  {
+    id: 4,
+    title: "Strategic Location & Rapid Infrastructure Growth",
+    desc: "With strong logistics and port access, Bangladesh ensures quick delivery of both bulk and custom cap orders worldwide."
+  },
+  {
+    id: 5,
+    title: "Government Incentives & Trade Benefits",
+    desc: "Enjoy duty-free exports to the EU and other regions, plus government support for Retail Apparel and Fashion Industry."
+  }
+];
 
-            title: "Extensive Local Network",
-            description:
-                "We offer an extensive local network in Vietnam, ensuring access to reliable suppliers and manufacturers.",
-        },
-        {
-            icon: <MdPersonalInjury className="text-5xl text-red-600" />,
-            title: "Cost-Effectiveness",
-            description:
-                "We provide cost-effective solutions by leveraging Vietnam’s competitive manufacturing and labor costs.",
-        },
-        {
-            icon: <IoSearch className="text-5xl text-red-600" />,
-            title: "Quality Assurance and Due-Diligence",
-            description:
-                "We support due diligence and ensure that your sourcing operations meet the highest standards of quality.",
-        },
-    ]
     return (
-        <section className="bg-[#F6F6F6]  ">
+        <section className=" ">
             <div className="  flex gap-12 flex-col md:flex-row min-h-[600px] items-center">
                 {/* Left side with image and text box */}
                 <div className="relative  flex-1">
@@ -37,7 +43,7 @@ const SourcingSection = () => {
                             src={sourcingImg}
                             alt="Team discussing sourcing"
                            
-                            className="w-full h-[600px] object-cover "
+                            className="w-full h-[650px] object-cover "
 
                         />
                     </div>
@@ -45,27 +51,27 @@ const SourcingSection = () => {
                 </div>
 
                 {/* Right side with text content */}
-                <div className={`flex-1 ${rajdhani.className} p-6 md:p-0`}>
-                    <h2 className="text-3xl w-3/4  md:text-4xl font-semibold text-gray-900 mb-6">
+                <div className={`flex-1 ${rajdhani.className} py-6 pl-6 md:p-0`}>
+                    <h2 className="text-2xl uppercase w-3/4  md:text-2xl font-semibold text-gray-900 mb-4">
                        Why Choosing a Sourcing
-                        Agency in Bangladesh
+                         in Bangladesh  for Retail Apparel and Fashion Industry? 
                     </h2>
 
-                    <div className="space-y-6">
+                    <div className="space-y-0">
 
 
                         {
-                            details.map((detail, index) => (
-                                <div key={index} className="flex cursor-pointer items-start space-x-4 hover:bg-white p-4  transition w-3/4 duration-300">
-                                    <div className="">
-                                        {detail.icon}
-                                    </div>
+                            advantages.map((detail, index) => (
+                                <div key={index} className="flex cursor-pointer  items-start space-x-4 hover:shadow-2xl  p-4  transition-all rounded-md w-3/4 duration-300">
+                                    <h2 className=" text-4xl font-semibold text-red-600">
+                                        {detail.id}
+                                    </h2>
                                     <div>
                                         <h3 className="font-bold text-gray-900 text-lg flex items-center">
-                                            <span className="text-red-600 mr-2">{`0${index + 1}`}</span> {detail.title}
+                                            {detail.title}
                                         </h3>
                                         <p className="text-gray-500 font-semibold text-sm mt-1">
-                                            {detail.description}
+                                            {detail.desc}
                                         </p>
                                     </div>
                                 </div>
