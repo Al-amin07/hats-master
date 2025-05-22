@@ -69,7 +69,7 @@ import { FaChevronRight } from "react-icons/fa6";
 
 export default function ProductSection() {
     return (
-        <section className="bg-white pt-16 border-2
+        <section className="bg-white pt-16 
         ">
             <div className="max-w-7xl min-h-auto relative mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-start ">

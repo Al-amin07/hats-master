@@ -10,15 +10,17 @@ const caps = [
     id: 1,
     name: "Hats & Caps",
     child: [
-      { id: 1, name: "Baseball Cap" },
-      { id: 2, name: "Trucker Hat" },
-      { id: 3, name: "Snapback Cap" },
-      { id: 4, name: "Fitted Cap" },
-      { id: 5, name: "Bucket Hat" },
-      { id: 6, name: "Washed Cap" },
+      { id: 11, name: "Baseball Hat" },
+      { id: 13, name: "Snapback Hat" },
+      { id: 12, name: "Trucker Hat" },
+      { id: 14, name: "5 Panel Hat" },
+      { id: 16, name: "Dad Hat" },
+      { id: 16, name: "Visor Hat" },
+      { id: 15, name: "Bucket Hat" },
     ],
   },
-  { id: 1, name: "Beanie & Knit hats" },
+  { id: 2, name: "Beanies & Knit Hats" },
+  { id: 3, name: "Head Scarves" },
 ];
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +57,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/">
             <h1
-              className={`text-2xl font-semibold ${
+              className={`text-2xl ml-6 font-semibold ${
                 pathname !== "/" && "text-black"
               }`}
             >
@@ -133,7 +135,7 @@ export default function Navbar() {
                   {link.label}
                 </Link>
                 <div
-                  className={`absolute hidden  top-20 left-[135px] w-[150px] bg-gray-100 text-black/75 shadow-lg ${
+                  className={`absolute hidden  top-20 left-[135px] w-[160px] bg-gray-100 text-black/75 shadow-lg ${
                     link.label === "PRODUCT" && "group-hover:flex"
                   }`}
                 >
@@ -155,7 +157,7 @@ export default function Navbar() {
                         </Link>
 
                         <div
-                          className={`absolute top-0 z-20 left-[145px] w-[140px] bg-gray-100 text-black/75 shadow-lg hidden ${
+                          className={`absolute top-0 z-20 left-[158px] w-[140px] bg-gray-100 text-black/75 shadow-lg hidden ${
                             cap.name === "Hats & Caps" &&
                             "group-hover/item:flex"
                           }`}

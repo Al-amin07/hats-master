@@ -1,9 +1,11 @@
+
+
 export const capDatas = [
   {
-    id: 1,
-    name: "Baseball Cap",
-    title: "Baseball Cap Manufacturers in Bangladesh",
-    description: `Elevate your style with Jusitex, where passion meets craftsmanship. As the Best Baseball Cap Manufacturers in Bangladesh, we weave a tale of quality, innovation, and personalized design. Discover unparalleled comfort and durability in every stitch, as we redefine the standards of baseball cap manufacturing. Experience the best in class, experience Jusitex – crafting excellence, one cap at a time. Choose the Best Baseball Cap Manufacturers for a style statement that speaks volumes.`,
+    id: 11,
+    name: "Baseball Hat",
+    title: "Baseball Hat Manufacturers in Bangladesh",
+    description: `Elevate your style with Jusitex, where passion meets craftsmanship. As the Best Baseball Hat Manufacturers in Bangladesh, we weave a tale of quality, innovation, and personalized design. Discover unparalleled comfort and durability in every stitch, as we redefine the standards of baseball cap manufacturing. Experience the best in class, experience Jusitex – crafting excellence, one cap at a time. Choose the Best Baseball Cap Manufacturers for a style statement that speaks volumes.`,
     features: [
       {
         heading: "Printed Baseball Caps Factory",
@@ -24,7 +26,7 @@ export const capDatas = [
     ],
   },
   {
-    id: 2,
+    id: 12,
     name: "Trucker Hat",
     title: "Trucker Hat Manufacturers in Bangladesh",
     description: `Elevate your trucker hat game with Jusitex. Our high-quality trucker hats blend mesh breathability with durable design and fashionable aesthetics. Ideal for branding, fashion, or function.`,
@@ -44,8 +46,8 @@ export const capDatas = [
     ],
   },
   {
-    id: 3,
-    name: "Snapback Cap",
+    id: 13,
+    name: "Snapback Hat",
     title: "Snapback Cap Supplier in Bangladesh",
     description: `Jusitex delivers stylish snapback caps with a modern fit. Ideal for sportswear brands, urban fashion, and promotional items.`,
     features: [
@@ -64,10 +66,10 @@ export const capDatas = [
     ],
   },
   {
-    id: 4,
-    name: "Fitted Cap",
-    title: "Fitted Cap Manufacturing Experts",
-    description: `Get premium fitted caps designed to size with top-notch finishing. Jusitex offers full customization and material options.`,
+    id: 14,
+    name: "5 Panel Hat",
+    title: "5 Panel Hat Manufacturing Experts",
+    description: `Get premium 5 Panel Hats designed to size with top-notch finishing. Jusitex offers full customization and material options.`,
     features: [
       {
         heading: "Tailored Sizes",
@@ -84,7 +86,7 @@ export const capDatas = [
     ],
   },
   {
-    id: 5,
+    id: 15,
     name: "Bucket Hat",
     title: "Bucket Hat Manufacturer Bangladesh",
     description: `From festival-ready bucket hats to outdoor utility gear, we craft stylish and functional designs that meet global standards.`,
@@ -104,10 +106,10 @@ export const capDatas = [
     ],
   },
   {
-    id: 6,
-    name: "Washed Cap",
-    title: "Washed Cap Manufacturers",
-    description: `Get that vintage look with washed caps that blend comfort with style. Pre-shrunk, garment-dyed, and soft to the touch.`,
+    id: 16,
+    name: "Dad Hat",
+    title: "Dad Hat Manufacturers",
+    description: `Get that vintage look with Dad Hats that blend comfort with style. Pre-shrunk, garment-dyed, and soft to the touch.`,
     features: [
       {
         heading: "Vintage Look",
@@ -120,6 +122,66 @@ export const capDatas = [
       {
         heading: "MOQ",
         content: "576 pcs/design in assorted sizes.",
+      },
+    ],
+  },
+  {
+    id: 17,
+    name: "Visor Hat",
+    title: "Visor Hat Manufacturers",
+    description: `Get that vintage look with Visor Hats that blend comfort with style. Pre-shrunk, garment-dyed, and soft to the touch.`,
+    features: [
+      {
+        heading: "Vintage Look",
+        content: "Stonewashed and enzyme-washed options available.",
+      },
+      {
+        heading: "Customization",
+        content: "Logos, labels, tags all fully customizable.",
+      },
+      {
+        heading: "MOQ",
+        content: "576 pcs/design in assorted sizes.",
+      },
+    ],
+  },
+  {
+    id: 19,
+    name: "Beanies & Knit Hats",
+    title: "Beanies & Knit Hat Manufacturers in Bangladesh",
+    description: `Stay cozy and stylish with Jusitex’s premium beanies and knit hats. Designed for warmth and fashion, perfect for cold seasons or streetwear branding.`,
+    features: [
+      {
+        heading: "Warm Materials",
+        content: "Acrylic, wool, and blended fabrics to suit various climates.",
+      },
+      {
+        heading: "Customization",
+        content: "Custom labels, embroidery, and pom-poms available.",
+      },
+      {
+        heading: "MOQ",
+        content: "Minimum 576 pcs per design.",
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: "Head Scarves",
+    title: "Head Scarf Supplier Bangladesh",
+    description: `Explore our head scarves collection featuring soft, breathable fabrics with vibrant prints. Ideal for fashion, modest wear, or functional uses.`,
+    features: [
+      {
+        heading: "Print Variety",
+        content: "Available in florals, solids, patterns, or custom graphics.",
+      },
+      {
+        heading: "Lightweight Fabrics",
+        content: "Modal, rayon, chiffon, and cotton options for comfort.",
+      },
+      {
+        heading: "MOQ",
+        content: "576 pcs minimum order quantity per style/design.",
       },
     ],
   },
