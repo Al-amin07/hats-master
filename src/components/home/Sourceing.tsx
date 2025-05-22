@@ -53,8 +53,7 @@ const SourcingSection = () => {
                 {/* Right side with text content */}
                 <div className={`flex-1 ${rajdhani.className} py-6 pl-6 md:p-0`}>
                     <h2 className="text-2xl uppercase w-3/4  md:text-2xl font-semibold text-gray-900 mb-4">
-                       Why Choosing a Sourcing
-                         in Bangladesh  for Retail Apparel and Fashion Industry? 
+                       Why Global Retailers Choose  Bangladesh  for Apparel  Sourcing? 
                     </h2>
 
                     <div className="space-y-0">
@@ -62,7 +61,7 @@ const SourcingSection = () => {
 
                         {
                             advantages.map((detail, index) => (
-                                <div key={index} className="flex cursor-pointer  items-start space-x-4 hover:shadow-2xl  p-4  transition-all rounded-md w-3/4 duration-300">
+                                <div key={index} className="flex cursor-pointer  items-start space-x-4 hover:shadow-2xl  p-4  transition-all  md:w-3/4 duration-500">
                                     <h2 className=" text-4xl font-semibold text-red-600">
                                         {detail.id}
                                     </h2>

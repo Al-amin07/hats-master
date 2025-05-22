@@ -147,12 +147,12 @@ export default function Navbar() {
                             cap.child ? "#" : `/product/${slugify(cap.name)}`
                           }`}
                           className="py-2.5  group
-                                              px-2 text-base flex items-center justify-start gap-1 w-full text-gray-900 text-center dark:text-gray-200 hover:bg-black hover:text-white transition-all duration-300  dark:hover:bg-slate-400/50  
+                                              px-2 text-base flex items-center justify-between gap-1 w-full text-gray-900 text-center dark:text-gray-200 hover:bg-black hover:text-white transition-all duration-300  dark:hover:bg-slate-400/50  
                                             "
                         >
                           {cap.name}
                           {cap.child && (
-                            <FaAngleRight className="group-hover/item:rotate-90 transition-transform duration-500" />
+                            <FaAngleRight className="group-hover/item:rotate-90 transition-transform duration-200" />
                           )}
                         </Link>
 
