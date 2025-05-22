@@ -1,12 +1,55 @@
+import { unslugify } from '@/service/slug'
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
-
+import image from '@/assets/cap/cap1.webp'
+import { ICap } from '@/type/cap.type'
 export default async function ProductDetailsPage({ params }: { params: Promise<{ title: string }> }) {
-    const title = (await params).title
+    const title = unslugify((await params).title)
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cap.json`)
+    const data = await res.json() as ICap[]
+    const cap = data.find(el => el.name === title)
+   
     return (
-        <div>
-            <h1 className="text-3xl font-bold text-center mt-10">{title}</h1>
-            <p className="text-center mt-4">This is the product details page for {title}.</p>
-            {/* Add more product details here */}
+      <div className=" mt-24 ">
+      <div className="max-w-5xl bg-gray-100 p-8 mx-auto flex flex-col md:flex-row items-center gap-10">
+        {/* Left Content */}
+        <div className="md:w-2/3">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+           {cap?.title}
+          </h2>
+          <p className="text-gray-700 mb-4">
+            {cap?.description}
+          </p>
+
+          <div className="space-y-4">
+            {
+                cap?.features?.map(el =>   <div key={el.content}>
+              <h3 className="font-semibold text-gray-800">{el.heading}:</h3>
+              <p className="text-gray-700">{el.content}</p>
+            </div>)
+            }
+          
+           
+          </div>
+
+          <Link href="/contact">
+            <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+              Get Price
+            </button>
+          </Link>
         </div>
+
+        {/* Right Image */}
+        <div className="md:w-1/3">
+          <Image
+            src={image}
+            alt="Baseball cap manufacturers in Bangladesh"
+            className=" shadow-md"
+          />
+          <p className="text-sm text-center text-gray-600 mt-2">{cap?.title}</p>
+        </div>
+      </div>
+    </div>
     )
 }
