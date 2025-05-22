@@ -110,13 +110,13 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         <div
-          className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white  md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 lg:flex md:items-center ${
+          className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-500 ease-in-out bg-white  md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 lg:flex md:items-center ${
             isOpen
               ? "translate-x-0 opacity-100"
               : "opacity-0 -translate-x-full md:opacity-100 md:translate-x-0"
           }`}
         >
-          <div className="flex flex-col md:flex-row md:mx-6">
+          <div className="flex flex-col space-y-3  md:space-y-0 md:flex-row md:mx-6">
             {navLinks.map((link) => (
               <div
                 className={`lg:px-4 group cursor-pointer  lg:py-7 `}
@@ -135,7 +135,7 @@ export default function Navbar() {
                   {link.label}
                 </Link>
                 <div
-                  className={`absolute hidden  top-20 left-[135px] w-[160px] bg-gray-100 text-black/75 shadow-lg ${
+                  className={`absolute hidden  top-16 lg:top-20 left-[135px] w-[160px] bg-gray-100 text-black/75 shadow-lg ${
                     link.label === "PRODUCT" && "group-hover:flex"
                   }`}
                 >
