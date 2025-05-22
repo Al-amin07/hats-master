@@ -71,7 +71,7 @@ export default function ProductSection() {
     return (
         <section className="bg-white pt-16 
         ">
-            <div className="max-w-7xl min-h-auto relative mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl min-h-auto relative mx-auto  px-4 sm:px-6 lg:px-8">
                 <div className="flex items-start ">
 
                     {/* Vertical Text on the Left */}
@@ -107,7 +107,7 @@ export default function ProductSection() {
                             breakpoints={{
                                 "@0.00": {
                                     slidesPerView: 1,
-                                    spaceBetween: 20,
+                                    spaceBetween: 0,
                                 },
                                 "@1.25": {
                                     slidesPerView: 2,
@@ -117,7 +117,7 @@ export default function ProductSection() {
 
                             }}
                             modules={[Navigation, HashNavigation, Autoplay]}
-                            className="mySwiper max-w-[350px] sm:max-w-[450px] md:max-w-2/3 lg:max-w-3xl min-h-[500px]"
+                            className="mySwiper max-w-md sm:max-w-[450px] md:max-w-2xl lg:max-w-3xl min-h-[500px]"
                         >
                             {products.map((el, index) => (
                                 <SwiperSlide

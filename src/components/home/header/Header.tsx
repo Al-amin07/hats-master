@@ -43,7 +43,7 @@ export default function Header() {
                 }}
                 loop={true}
                 autoplay={{
-                    delay: 600000,
+                    delay: 6000,
                     disableOnInteraction: false,
                 }}
                 hashNavigation={{ watchState: true }}
