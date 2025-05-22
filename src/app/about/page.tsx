@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 import TransitionToBangladesh from '@/components/TransitionToBangladesh'
 import Link from 'next/link'
 import CustomizeSection from '@/components/CustomizeSection'
+import Testimonial from '@/components/home/Testimonial'
 
 export default function AboutUsPge() {
     return (
@@ -37,11 +38,12 @@ export default function AboutUsPge() {
                 </div>
             </div>
 
-            <div className='space-y-12'>
+            <div className='space-y-16'>
                 {/* <WhyChooseUs /> */}
                 <WeManageItAll />
                 <TransitionToBangladesh />
                 <CustomizeSection />
+                <Testimonial />
             </div>
         </div>
     )

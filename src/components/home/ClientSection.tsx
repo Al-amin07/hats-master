@@ -6,8 +6,8 @@ export default function ClientSection() {
     <section className="max-w-6xl  mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
       <div className=" pr-8">
         <h2 className="text-3xl md:text-[40px] font-extrabold leading-tight mb-6">
-          STREET WEAR <br />
-          ACTION SPORTS <br />
+          HEADWEAR <br />
+         STREET WEAR <br />
           BRANDS & MEDIA
         </h2>
         <p className="mb-4 text-gray-900">
