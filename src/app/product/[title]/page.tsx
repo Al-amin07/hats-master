@@ -4,11 +4,12 @@ import Link from 'next/link'
 import React from 'react'
 import image from '@/assets/cap/cap1.webp'
 import { ICap } from '@/type/cap.type'
+import { capDatas } from '@/static/cap.data'
 export default async function ProductDetailsPage({ params }: { params: Promise<{ title: string }> }) {
     const title = unslugify((await params).title)
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cap.json`)
-    const data = await res.json() as ICap[]
-    const cap = data.find(el => el.name === title)
+    // const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/cap.json`)
+    // const data = await res.json() as ICap[]
+    const cap = capDatas?.find(el => el.name === title) as ICap
    
     return (
       <div className=" mt-24 ">
