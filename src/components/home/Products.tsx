@@ -75,7 +75,7 @@ export default function ProductSection() {
                 <div className="flex items-start ">
 
                     {/* Vertical Text on the Left */}
-                    <div className="hidden border-b-2 uppercase border-transparent hover:border-[#90645A] h-[430px] lg:flex min-w-1/3 justify-center items-center">
+                    <div className="hidden border-b-2 uppercase border-transparent hover:border-[#90645A] h-[411px] lg:flex min-w-1/3 justify-center items-center">
                         <span style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg) ' }} className='-rotate-180 uppercase text-3xl mr-5'>we make it all</span>
                         <h2
                             className={`text-4xl rotate-180 font-bold   text-black  `}

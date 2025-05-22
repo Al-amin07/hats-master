@@ -139,16 +139,11 @@ export default function Navbar() {
                 >
                   <div className="flex flex-col  w-full">
                     {caps.map((cap) => (
-                      <div
-                        key={cap.id}
-                       
-                        className=" relative group/item"
-                       
-                      >
+                      <div key={cap.id} className=" relative group/item">
                         <Link
-                          href={`${cap.child ? "#": `/product/${slugify(cap.name)}`}`}
-                      
-                          
+                          href={`${
+                            cap.child ? "#" : `/product/${slugify(cap.name)}`
+                          }`}
                           className="py-2.5  group
                                               px-2 text-base flex items-center justify-start gap-1 w-full text-gray-900 text-center dark:text-gray-200 hover:bg-black hover:text-white transition-all duration-300  dark:hover:bg-slate-400/50  
                                             "
@@ -158,29 +153,29 @@ export default function Navbar() {
                             <FaAngleRight className="group-hover/item:rotate-90 transition-transform duration-500" />
                           )}
                         </Link>
-                      
-  <div
-    className={`absolute top-0 z-20 left-[145px] w-[140px] bg-gray-100 text-black/75 shadow-lg hidden ${cap.name === 'Hats & Caps' && 'group-hover/item:flex'}`}
-  >
-    <div className="flex flex-col w-full">
-      {caps[0]?.child?.map((cap) => (
-        <Link
-          key={cap.id}
-          href={`/product/${slugify(cap.name)}`}
-          className="py-2.5 px-1.5 text-base flex items-center justify-center gap-1 w-full text-gray-900 text-center dark:text-gray-200 hover:bg-black hover:text-white transition-all duration-300 dark:hover:bg-slate-400/50"
-        >
-          {cap.name}
-        </Link>
-      ))}
-    </div>
-  </div>
 
-
+                        <div
+                          className={`absolute top-0 z-20 left-[145px] w-[140px] bg-gray-100 text-black/75 shadow-lg hidden ${
+                            cap.name === "Hats & Caps" &&
+                            "group-hover/item:flex"
+                          }`}
+                        >
+                          <div className="flex flex-col w-full">
+                            {caps[0]?.child?.map((cap) => (
+                              <Link
+                                key={cap.id}
+                                href={`/product/${slugify(cap.name)}`}
+                                className="py-2.5  text-base flex items-center justify-start px-2.5 gap-1 w-full text-gray-900 text-center dark:text-gray-200 hover:bg-black hover:text-white transition-all duration-300 dark:hover:bg-slate-400/50"
+                              >
+                                {cap.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
                       </div>
                     ))}
                   </div>
                 </div>
-               
               </div>
             ))}
           </div>
