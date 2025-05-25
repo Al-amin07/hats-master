@@ -28,7 +28,7 @@ export default function ProductSection() {
                 <div className="flex items-start ">
 
                     {/* Vertical Text on the Left */}
-                    <div className="hidden border-b-2 uppercase border-transparent hover:border-[#90645A] h-[435px] lg:flex min-w-1/3 justify-center items-center">
+                    <div className="hidden border-b-2 uppercase border-transparent hover:border-[#90645A] h-[455px] lg:flex min-w-1/3 justify-center items-center">
                         <span style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg) ' }} className='-rotate-180 uppercase text-3xl mr-5'>we make it all</span>
                         <h2
                             className={`text-4xl rotate-180 font-bold   text-black  `}
@@ -87,7 +87,7 @@ export default function ProductSection() {
                                     />
                                     <div className="p-4">
                                         <h3 className="text-xl font-semibold text-gray-800">{el?.name}</h3>
-                                        <p className="text-gray-600 line-clamp-2 mt-1">{el.description}</p>
+                                        <p className="text-gray-600  mt-1">{el.description}</p>
                                     </div>
                                    </Link>
                                 </SwiperSlide>
