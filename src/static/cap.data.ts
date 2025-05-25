@@ -1,44 +1,51 @@
-
-import img1 from '@/assets/cap/c1.jpg'
-import img2 from '@/assets/cap/c2.avif'
-import img3 from '@/assets/cap/c3.avif'
-import img4 from '@/assets/cap/c4.avif'
-import img5 from '@/assets/cap/cap1.webp'
+import img1 from "@/assets/cap/c1.jpg";
+import img2 from "@/assets/cap/c2.avif";
+import img3 from "@/assets/cap/c3.avif";
+import img4 from "@/assets/cap/c4.avif";
+import img5 from "@/assets/cap/cap1.webp";
 
 export const capDatas = [
   {
     id: 11,
     name: "Baseball Cap",
-    title: "Baseball Cap Manufacturers in Bangladesh",
-    image: img1,
+    title: "Premium Cotton Baseball Caps for Branding",
+    image: img4,
     description:
       "A timeless design with a curved brim, perfect for teams, retail brands, or promotional use. Trusted by brands seeking a custom baseball hats supplier.",
+    description2:
+      "Level up your retail line with premium baseball caps built for high-volume drops. Tailor everything — panels, closures, stitching, even inner labels. Add logo embroidery or leather patches, plus export-ready packaging. A perfect match for brands sourcing retail ready baseball caps.",
     features: [
       {
         heading: "Printed Baseball Caps Factory",
-        content: "As per customer requirements, and make all kinds best-Printed Baseball caps.",
+        content:
+          "As per customer requirements, and make all kinds best-Printed Baseball caps.",
       },
       {
         heading: "Embroidery Baseball Caps Manufacturer",
-        content: "On customer demand, we make various kinds of Embroidery Baseball Caps.",
+        content:
+          "On customer demand, we make various kinds of Embroidery Baseball Caps.",
       },
       {
         heading: "Fabrics & Materials",
-        content: "Able to make your required quality fabrics from textile mills.",
+        content:
+          "Able to make your required quality fabrics from textile mills.",
       },
       {
         heading: "Minimum Order Quantity (MOQ)",
-        content: "MOQ 576 pcs/ color/Design. (24 pcs will be an inner carton and 6 inner cartons will be a master carton. Each carton Quantity 144 pcs)",
+        content:
+          "MOQ 576 pcs/ color/Design. (24 pcs will be an inner carton and 6 inner cartons will be a master carton. Each carton Quantity 144 pcs)",
       },
     ],
   },
   {
-    id: 13,
+    id: 12,
     name: "Snapback Cap",
-    title: "Snapback Cap Supplier in Bangladesh",
+    title: "Flat Brim Snapback Caps with Logo Embroidery",
     image: img2,
     description:
       "Bold, flat-brim caps with adjustable snaps. A top pick for urban, sports, and lifestyle brands partnering with a reliable flat brim snapback manufacturer.",
+    description2:
+      "Hit the streets with sharp-cut snapbacks that scream style. Customize brim textures, metal eyelets, puff embroidery, or gold foil underbills. Add high-gloss retail tags. Your go-to urban snapback supplier for edgy, high-margin collections.",
     features: [
       {
         heading: "Customization",
@@ -55,16 +62,19 @@ export const capDatas = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     name: "Trucker Cap",
-    title: "Trucker Hat Manufacturers in Bangladesh",
+    title: "Foam Mesh Trucker Caps for Outdoor Promotions",
     image: img3,
     description:
       "Classic mesh-back caps with a breathable fit and foam front. Designed for companies sourcing mesh trucker caps wholesale for outdoor or promo wear.",
+    description2:
+      "Designed for cool comfort and bold branding. Foam or cotton front panels, mesh backing, and optional UV print or 3D logo badge. Bulk pricing, low MOQ, fast lead time — made for those sourcing custom promo mesh hats for campaigns that convert.",
     features: [
       {
         heading: "Custom Mesh Panels",
-        content: "Personalized mesh panels available with printed or embroidered logos.",
+        content:
+          "Personalized mesh panels available with printed or embroidered logos.",
       },
       {
         heading: "Comfort Fit",
@@ -76,14 +86,16 @@ export const capDatas = [
       },
     ],
   },
-  
+
   {
     id: 14,
     name: "6 Panel Cap",
-    title: "5 Panel Hat Manufacturing Experts",
+    title: "Structured 6 Panel Caps for Private Label Brands",
     image: img4,
     description:
       "Structured, stylish, and globally popular. Ideal for fashion labels looking for private label 6 panel caps with high customization options.",
+    description2:
+      "Classic never looked so fresh. Choose brushed cotton, organic twill, or performance blends. 3D embroidery, sublimation, or vintage wash? Done. Partner with a bespoke panel cap factory that gets your brand vision.",
     features: [
       {
         heading: "Tailored Sizes",
@@ -100,12 +112,14 @@ export const capDatas = [
     ],
   },
   {
-    id: 15,
+    id: 17,
     name: "Bucket Hat",
-    title: "Bucket Hat Manufacturer Bangladesh",
+    title: "Reversible Streetwear Bucket Hats with Woven Labels",
     image: img5,
     description:
       "Fashion-forward with full sun coverage. Perfect for streetwear and resort brands seeking bucket hats private label production.",
+    description2:
+      "Loved at music fests, beach stores, and streetwear drops. Go bold with reversible prints, neon dye, or embroidery across the brim. Custom QR-code tags? Yes. Trusted by brands creating standout festival bucket hats.",
     features: [
       {
         heading: "UV Protection",
@@ -122,12 +136,14 @@ export const capDatas = [
     ],
   },
   {
-    id: 16,
+    id: 15,
     name: "Dad Cap",
-    title: "Dad Hat Manufacturers",
+    title: "Vintage Washed Dad Caps with Custom Patch Options",
     image: img1,
     description:
       "Low-profile and soft for that vintage casual look. A favorite for streetwear and indie brands working with an unstructured dad hats supplier.",
+    description2:
+      "The “I woke up like this” of headwear. Washed cotton, metal adjusters, tone-on-tone stitching, and embroidery that fades like fine denim. Add hangtags, barcode stickers, or eco wraps. Sourced by brands needing washed cotton caps wholesale with character.",
     features: [
       {
         heading: "Vintage Look",
@@ -144,12 +160,14 @@ export const capDatas = [
     ],
   },
   {
-    id: 17,
+    id: 16,
     name: "Visor Cap",
-    title: "Visor Hat Manufacturers",
+    title: "Breathable Sports Visor Caps with Logo Print",
     image: img2,
     description:
       "Lightweight and open-top great for golf, tennis, and summer campaigns. Trusted by those sourcing custom sun visors for brands with style.",
+    description2:
+      "Minimal build, maximum impact. Sweat-wicking visors with stretch bands and reflective print options. Fully brandable, from inner tape to outer label. Perfect for sportswear labels looking for high-function performance visor caps.",
     features: [
       {
         heading: "Vintage Look",
@@ -166,12 +184,14 @@ export const capDatas = [
     ],
   },
   {
-    id: 19,
+    id: 18,
     name: "Beanie Hat",
-    title: "Beanies & Knit Hat Manufacturers in Bangladesh",
+    title: "Soft Knit Beanies for Winter Collections",
     image: img3,
     description:
       "Warm, stretchy, and ready for winter drops. Ideal for labels that want quality from a reliable knit beanies manufacturer.",
+    description2:
+      "Stretch, warmth, and serious brand real estate. Choose wide-rib, waffle, or jersey knit. Add embroidery, sewn patches, or premium fold-over tags. Your go-to source for seasonal knitwear hats that sell all winter long.",
     features: [
       {
         heading: "Warm Materials",
@@ -188,12 +208,14 @@ export const capDatas = [
     ],
   },
   {
-    id: 18,
+    id: 19,
     name: "Head Scarf",
-    title: "Head Scarf Supplier Bangladesh",
+    title: "Custom Printed Head Scarves for Fashion Brands",
     image: img4,
     description:
       "Stylish, lightweight, and culturally versatile. A strong choice for brands looking for a trusted fashion head scarves supplier.",
+    description2:
+      "Whether it's modest wear, high fashion, or cultural merch, we custom dye, stitch, and brand your headwraps. Viscose, chiffon, or satin — your choice. Labels, hang tags, and pouches included. The best-kept secret in custom printed headwraps sourcing.",
     features: [
       {
         heading: "Print Variety",

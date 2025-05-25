@@ -75,7 +75,7 @@ export default function ProductSection() {
                             {capDatas.map((el, index) => (
                                 <SwiperSlide
                                     key={index}
-                                    className="select-none bg-white  cursor-pointer border-b-2 border-transparent   overflow-hidden transition-all duration-500 hover:border-[#90645A]"
+                                    className="select-none bg-white  cursor-pointer border-b-2 border-transparent   overflow-hidden transition-all duration-500 hover:shadow-2xl"
                                 >
                                    <Link href={`/product/${slugify(el.name)}`}>
                                     <Image

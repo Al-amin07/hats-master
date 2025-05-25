@@ -43,7 +43,7 @@ export default function Header() {
                 }}
                 loop={true}
                 autoplay={{
-                    delay: 6000,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
                 hashNavigation={{ watchState: true }}
@@ -94,7 +94,7 @@ export default function Header() {
               ">
                                 <h1 className="text-2xl uppercase font-semibold  text-white  text-center  md:text-right  lg:text-[40px]">
                                     Headwear manufacturing specialist <br />
-                                   sourcing agent to imports
+                                   sourcing agent to importers
                                 </h1>
 
                                <Link href={'/process'} className='flex justify-center md:justify-between items-center gap-2.5 md:gap-0 max-w-[400px] lg:max-w-md  ml-auto mr-auto md:mr-0 mt-6  border p-3 md:p-4 rounded-md cursor-pointer text-white hover:bg-black  hover:border-black transition-colors duration-500'>

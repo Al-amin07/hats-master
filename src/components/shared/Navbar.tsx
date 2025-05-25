@@ -30,7 +30,7 @@ export default function Navbar() {
     { href: "/", label: "HOME" },
     { href: "#", label: "PRODUCT" },
     { href: "/process", label: "OUR PROCESS" },
-    { href: "/blog", label: "BLOG" },
+    { href: "/application", label: "APPLICATIONS" },
     { href: "/about", label: "ABOUT" },
     { href: "/contact", label: "CONTACT" },
   ];
@@ -118,7 +118,7 @@ export default function Navbar() {
           <div className="flex flex-col space-y-3  md:space-y-0 md:flex-row md:mx-6">
             {navLinks.map((link) => (
               <div
-                className={`lg:px-4 group cursor-pointer  lg:py-7 `}
+                className={`lg:px-2 group cursor-pointer  lg:py-7 `}
                 key={link.href}
               >
                 <Link
@@ -134,7 +134,7 @@ export default function Navbar() {
                   {link.label}
                 </Link>
                 <div
-                  className={`absolute hidden  top-16 lg:top-20 left-[135px] w-[140px] bg-gray-100 text-black/75 shadow-lg ${
+                  className={`absolute hidden  top-16 lg:top-20 left-[135px] w-[125px] bg-gray-100 text-black/75 shadow-lg ${
                     link.label === "PRODUCT" && "group-hover:flex"
                   }`}
                 >
@@ -156,7 +156,7 @@ export default function Navbar() {
                         </Link>
 
                         <div
-                          className={`absolute top-0 z-20 left-[138px] w-[140px] bg-gray-100 text-black/75 shadow-lg hidden ${
+                          className={`absolute top-0 z-20 left-[123px] w-[125px] bg-gray-100 text-black/75 shadow-lg hidden ${
                             cap.name === "Hats & Caps" &&
                             "group-hover/item:flex"
                           }`}
