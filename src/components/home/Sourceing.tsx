@@ -43,7 +43,7 @@ const SourcingSection = () => {
                             src={sourcingImg}
                             alt="Team discussing sourcing"
                            
-                            className="w-full h-[650px] object-cover "
+                            className="w-full md:h-[600px] lg:h-[650px] object-cover "
 
                         />
                     </div>
@@ -51,8 +51,8 @@ const SourcingSection = () => {
                 </div>
 
                 {/* Right side with text content */}
-                <div className={`flex-1 ${rajdhani.className} py-6 pl-6 md:p-0`}>
-                    <h2 className="text-2xl uppercase w-3/4  md:text-2xl font-semibold text-gray-900 mb-4">
+                <div className={`flex-1 ${rajdhani.className} py-6 px-6 md:p-0`}>
+                    <h2 className="text-2xl uppercase md:w-3/4  md:text-2xl font-semibold text-gray-900 mb-4">
                        Why Global Retailers Choose  Bangladesh  for Apparel  Sourcing? 
                     </h2>
 

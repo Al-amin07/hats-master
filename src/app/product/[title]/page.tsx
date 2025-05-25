@@ -53,31 +53,35 @@ export default async function ProductDetailsPage({
   console.log({ title });
   return (
     <div className=" mt-20 ">
-      <div className={`container p-6 md:p-8 lg:p-16 mx-auto flex flex-col ${cap.id % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-start gap-6`}>
+      <div
+        className={`container p-6 md:p-8 lg:p-16 mx-auto flex flex-col ${
+          cap.id % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+        } items-start gap-6`}
+      >
         {/* Left Content */}
         <div className="lg:w-1/2">
-          <h2 className="text-2xl pb-5 border-b border-gray-500 md:text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl pb-5 border-b border-gray-500 md:text-xl uppercase font-bold text-gray-900 mb-4">
             {cap?.title}
           </h2>
           <p className="text-gray-700 mb-4 ">{cap?.description2}</p>
 
           <Accordion type="single" collapsible className="w-full">
-            {
-              accordian?.map(el => <AccordionItem  key={el.question} value={el.question}>
-              <AccordionTrigger className="cursor-pointer">{el.question}</AccordionTrigger>
-              <AccordionContent>
-              {el.answer}
-              </AccordionContent>
-            </AccordionItem>)
-            }
-            
+            {accordian?.map((el) => (
+              <AccordionItem key={el.question} value={el.question}>
+                <AccordionTrigger className="cursor-pointer">
+                  {el.question}
+                </AccordionTrigger>
+                <AccordionContent>{el.answer}</AccordionContent>
+              </AccordionItem>
+            ))}
           </Accordion>
 
           <Link href="/contact">
-            <button className="mt-4 bg-transparent border border-black text-black cursor-pointer px-5 py-1.5 hover:bg-black text-sm hover:text-white  transition-all duration-500">
-              GET A QUOTE
+            <button className="mt-4 bg-black border border-black text-white cursor-pointer px-5 py-1.5 hover:bg-transparent text-sm hover:text-black  transition-all duration-500">
+              GET A QUOTE/ REQUEST SAMPLES
             </button>
           </Link>
+       
         </div>
 
         {/* Right Image */}
@@ -89,7 +93,6 @@ export default async function ProductDetailsPage({
             height={800}
             width={700}
           />
-        
         </div>
       </div>
     </div>

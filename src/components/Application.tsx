@@ -14,6 +14,7 @@ import a12 from "@/assets/application/a12.webp";
 import Image from "next/image";
 import Link from "next/link";
 const datas = [
+  { img: a8, name: "Ask Our Team" },
   { img: a1, name: "Embroidered Patch" },
   { img: a2, name: "Embroidery" },
   { img: a3, name: "Sublimation Print Logo" },
@@ -21,74 +22,21 @@ const datas = [
   { img: a5, name: "Screenprint" },
   { img: a6, name: "3D Embroidery" },
   { img: a7, name: "Woven Patch" },
-  { img: a8, name: "Ask Our Team" },
 ];
 const fastenings = [
+  { img: a12, name: "Ask Our Team" },
   { img: a9, name: "Embossed Buckle" },
   { img: a10, name: "Plastic Snap" },
   { img: a11, name: "Embossed PU Fastening" },
-  { img: a12, name: "Ask Our Team" },
 ];
-export default function ApplicationPage() {
+export default function Application() {
   return (
     <div>
-      <div className="mt-32 max-w-7xl mx-auto">
-        <h1 className="text-4xl mb-7">Applications</h1>
-        <div className="grid xl:grid-cols-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="mt-8 max-w-7xl mx-auto">
+        <h1 className="text-3xl font-semibold mb-6 uppercase">Applications</h1>
+       <div className="grid xl:grid-cols-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {datas.map((el, ind) =>
-            datas.length !== ind + 1 ? (
-              <div className="relative group" key={el.name}>
-                <Image
-                  src={el.img}
-                  alt={el.name}
-                  height={500}
-                  className="md:h-[500px] h-[400px] group-hover:scale-105   transition-all duration-500 cursor-pointer object-cover"
-                  width={450}
-                />
-                <div className="absolute z-10 bottom-4 left-5">
-                  
-                  <h1 className=" text-2xl font-semibold text-white ">
-                    {el.name}
-                  </h1>
-                </div>
-                <div className="h-full opacity-0 group-hover:opacity-100 w-full group-hover:scale-105  transition-all duration-500 cursor-pointer object-cover inset-0 absolute bg-black/30 ">
-
-                </div>
-              </div>
-            ) : (
-              <Link href={"/contact"} className="relative group" key={el.name}>
-                <Image
-                  src={el.img}
-                  alt={el.name}
-                  height={500}
-                  className="h-[500px] group-hover:scale-105 group-hover:opacity-90  transition-all duration-500 cursor-pointer object-cover"
-                  width={450}
-                />
-                <div className="absolute z-10 bottom-4 left-5">
-                 
-                    <p className="text-white text-sm font-bold">
-                      Do You need help?
-                    </p>
-                  
-                  <h1 className={`text-2xl font-semibold text-white  `}>
-                    {el.name}
-
-                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-                  </h1>
-                </div>
-                <div className="h-full opacity-0 group-hover:opacity-100 w-full group-hover:scale-105  transition-all duration-500 cursor-pointer object-cover inset-0 absolute bg-black/30 ">
-
-                </div>
-              </Link>
-            )
-          )}
-        </div>
-      </div>
-      <div className="mt-32 max-w-7xl mx-auto">
-        <h1 className="text-4xl mb-7">Fastenings</h1>
-    <div className="grid xl:grid-cols-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {fastenings.map((el, ind) =>
-            fastenings.length !== ind + 1 ? (
+             ind !== 0 ? (
               <div className="relative group" key={el.name}>
                 <Image
                   src={el.img}
@@ -117,12 +65,64 @@ export default function ApplicationPage() {
                   width={450}
                 />
                 <div className="absolute z-10 bottom-4 left-5">
-                  {fastenings.length === ind + 1 && (
-                    <p className="text-white text-sm font-bold">
-                      Do You need help?
+                  
+                    <p className="text-white font-bold">
+                      Do you need help?
                     </p>
-                  )}
-                  <h1 className={`text-2xl font-semibold text-white  `}>
+                  
+                  <h1 className={`text-2xl uppercase font-semibold text-white  `}>
+                    {el.name}
+
+                    <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+                  </h1>
+                </div>
+                <div className="h-full opacity-0 group-hover:opacity-100 w-full group-hover:scale-105  transition-all duration-500 cursor-pointer object-cover inset-0 absolute bg-black/30 ">
+
+                </div>
+              </Link>
+            )
+          )}
+        </div>
+      </div>
+      <div className="mt-16 max-w-7xl mx-auto">
+        <h1 className=" text-3xl font-semibold mb-6 uppercase ">Fastenings</h1>
+    <div className="grid xl:grid-cols-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {fastenings.map((el, ind) =>
+             ind !== 0 ? (
+              <div className="relative group" key={el.name}>
+                <Image
+                  src={el.img}
+                  alt={el.name}
+                  height={500}
+                  className="h-[500px] group-hover:scale-105 group-hover:opacity-90  transition-all duration-500 cursor-pointer object-cover"
+                  width={450}
+                />
+                <div className="absolute z-10 bottom-4 left-5">
+                  
+                  <h1 className=" text-2xl font-semibold text-white ">
+                    {el.name}
+                  </h1>
+                </div>
+                <div className="h-full opacity-0 group-hover:opacity-100 w-full group-hover:scale-105  transition-all duration-500 cursor-pointer object-cover inset-0 absolute bg-black/30 ">
+
+                </div>
+              </div>
+            ) : (
+              <Link href={"/contact"} className="relative group" key={el.name}>
+                <Image
+                  src={el.img}
+                  alt={el.name}
+                  height={500}
+                  className="h-[500px] group-hover:scale-105  transition-all duration-500 cursor-pointer object-cover"
+                  width={450}
+                />
+                <div className="absolute z-10 bottom-4 left-5">
+                  
+                    <p className="text-white font-bold">
+                      Do you need help?
+                    </p>
+                  
+                  <h1 className={`text-2xl uppercase font-semibold text-white  `}>
                     {el.name}
 
                     <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
