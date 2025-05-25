@@ -4,23 +4,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaAngleRight } from "react-icons/fa6";
 import { slugify } from "@/service/slug";
-
 const caps = [
   {
     id: 1,
     name: "Hats & Caps",
     child: [
-      { id: 11, name: "Baseball Hat" },
-      { id: 13, name: "Snapback Hat" },
-      { id: 12, name: "Trucker Hat" },
-      { id: 14, name: "5 Panel Hat" },
-      { id: 16, name: "Dad Hat" },
-      { id: 16, name: "Visor Hat" },
+      { id: 11, name: "Baseball Cap" },
+      { id: 13, name: "Snapback Cap" },
+      { id: 12, name: "Trucker Cap" },
+      { id: 14, name: "6 Panel Cap" },
+      { id: 16, name: "Dad Cap" },
+      { id: 16, name: "Visor Cap" },
       { id: 15, name: "Bucket Hat" },
     ],
   },
-  { id: 2, name: "Beanies & Knit Hats" },
-  { id: 3, name: "Head Scarves" },
+  { id: 2, name: "Beanie Hat" },
+  { id: 3, name: "Head Scarf" },
 ];
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -135,7 +134,7 @@ export default function Navbar() {
                   {link.label}
                 </Link>
                 <div
-                  className={`absolute hidden  top-16 lg:top-20 left-[135px] w-[160px] bg-gray-100 text-black/75 shadow-lg ${
+                  className={`absolute hidden  top-16 lg:top-20 left-[135px] w-[140px] bg-gray-100 text-black/75 shadow-lg ${
                     link.label === "PRODUCT" && "group-hover:flex"
                   }`}
                 >
@@ -157,7 +156,7 @@ export default function Navbar() {
                         </Link>
 
                         <div
-                          className={`absolute top-0 z-20 left-[158px] w-[140px] bg-gray-100 text-black/75 shadow-lg hidden ${
+                          className={`absolute top-0 z-20 left-[138px] w-[140px] bg-gray-100 text-black/75 shadow-lg hidden ${
                             cap.name === "Hats & Caps" &&
                             "group-hover/item:flex"
                           }`}

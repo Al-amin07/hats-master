@@ -1,11 +1,18 @@
 
+import img1 from '@/assets/cap/c1.jpg'
+import img2 from '@/assets/cap/c2.avif'
+import img3 from '@/assets/cap/c3.avif'
+import img4 from '@/assets/cap/c4.avif'
+import img5 from '@/assets/cap/cap1.webp'
 
 export const capDatas = [
   {
     id: 11,
-    name: "Baseball Hat",
-    title: "Baseball Hat Manufacturers in Bangladesh",
-    description: `Elevate your style with Jusitex, where passion meets craftsmanship. As the Best Baseball Hat Manufacturers in Bangladesh, we weave a tale of quality, innovation, and personalized design. Discover unparalleled comfort and durability in every stitch, as we redefine the standards of baseball cap manufacturing. Experience the best in class, experience Jusitex – crafting excellence, one cap at a time. Choose the Best Baseball Cap Manufacturers for a style statement that speaks volumes.`,
+    name: "Baseball Cap",
+    title: "Baseball Cap Manufacturers in Bangladesh",
+    image: img1,
+    description:
+      "A timeless design with a curved brim, perfect for teams, retail brands, or promotional use. Trusted by brands seeking a custom baseball hats supplier.",
     features: [
       {
         heading: "Printed Baseball Caps Factory",
@@ -26,30 +33,12 @@ export const capDatas = [
     ],
   },
   {
-    id: 12,
-    name: "Trucker Hat",
-    title: "Trucker Hat Manufacturers in Bangladesh",
-    description: `Elevate your trucker hat game with Jusitex. Our high-quality trucker hats blend mesh breathability with durable design and fashionable aesthetics. Ideal for branding, fashion, or function.`,
-    features: [
-      {
-        heading: "Custom Mesh Panels",
-        content: "Personalized mesh panels available with printed or embroidered logos.",
-      },
-      {
-        heading: "Comfort Fit",
-        content: "Adjustable snaps and structured crown for daily comfort.",
-      },
-      {
-        heading: "MOQ",
-        content: "576 pcs per design. Bulk pricing available.",
-      },
-    ],
-  },
-  {
     id: 13,
-    name: "Snapback Hat",
+    name: "Snapback Cap",
     title: "Snapback Cap Supplier in Bangladesh",
-    description: `Jusitex delivers stylish snapback caps with a modern fit. Ideal for sportswear brands, urban fashion, and promotional items.`,
+    image: img2,
+    description:
+      "Bold, flat-brim caps with adjustable snaps. A top pick for urban, sports, and lifestyle brands partnering with a reliable flat brim snapback manufacturer.",
     features: [
       {
         heading: "Customization",
@@ -66,10 +55,35 @@ export const capDatas = [
     ],
   },
   {
+    id: 12,
+    name: "Trucker Cap",
+    title: "Trucker Hat Manufacturers in Bangladesh",
+    image: img3,
+    description:
+      "Classic mesh-back caps with a breathable fit and foam front. Designed for companies sourcing mesh trucker caps wholesale for outdoor or promo wear.",
+    features: [
+      {
+        heading: "Custom Mesh Panels",
+        content: "Personalized mesh panels available with printed or embroidered logos.",
+      },
+      {
+        heading: "Comfort Fit",
+        content: "Adjustable snaps and structured crown for daily comfort.",
+      },
+      {
+        heading: "MOQ",
+        content: "576 pcs per design. Bulk pricing available.",
+      },
+    ],
+  },
+  
+  {
     id: 14,
-    name: "5 Panel Hat",
+    name: "6 Panel Cap",
     title: "5 Panel Hat Manufacturing Experts",
-    description: `Get premium 5 Panel Hats designed to size with top-notch finishing. Jusitex offers full customization and material options.`,
+    image: img4,
+    description:
+      "Structured, stylish, and globally popular. Ideal for fashion labels looking for private label 6 panel caps with high customization options.",
     features: [
       {
         heading: "Tailored Sizes",
@@ -89,7 +103,9 @@ export const capDatas = [
     id: 15,
     name: "Bucket Hat",
     title: "Bucket Hat Manufacturer Bangladesh",
-    description: `From festival-ready bucket hats to outdoor utility gear, we craft stylish and functional designs that meet global standards.`,
+    image: img5,
+    description:
+      "Fashion-forward with full sun coverage. Perfect for streetwear and resort brands seeking bucket hats private label production.",
     features: [
       {
         heading: "UV Protection",
@@ -107,9 +123,11 @@ export const capDatas = [
   },
   {
     id: 16,
-    name: "Dad Hat",
+    name: "Dad Cap",
     title: "Dad Hat Manufacturers",
-    description: `Get that vintage look with Dad Hats that blend comfort with style. Pre-shrunk, garment-dyed, and soft to the touch.`,
+    image: img1,
+    description:
+      "Low-profile and soft for that vintage casual look. A favorite for streetwear and indie brands working with an unstructured dad hats supplier.",
     features: [
       {
         heading: "Vintage Look",
@@ -127,9 +145,11 @@ export const capDatas = [
   },
   {
     id: 17,
-    name: "Visor Hat",
+    name: "Visor Cap",
     title: "Visor Hat Manufacturers",
-    description: `Get that vintage look with Visor Hats that blend comfort with style. Pre-shrunk, garment-dyed, and soft to the touch.`,
+    image: img2,
+    description:
+      "Lightweight and open-top great for golf, tennis, and summer campaigns. Trusted by those sourcing custom sun visors for brands with style.",
     features: [
       {
         heading: "Vintage Look",
@@ -147,9 +167,11 @@ export const capDatas = [
   },
   {
     id: 19,
-    name: "Beanies & Knit Hats",
+    name: "Beanie Hat",
     title: "Beanies & Knit Hat Manufacturers in Bangladesh",
-    description: `Stay cozy and stylish with Jusitex’s premium beanies and knit hats. Designed for warmth and fashion, perfect for cold seasons or streetwear branding.`,
+    image: img3,
+    description:
+      "Warm, stretchy, and ready for winter drops. Ideal for labels that want quality from a reliable knit beanies manufacturer.",
     features: [
       {
         heading: "Warm Materials",
@@ -167,9 +189,11 @@ export const capDatas = [
   },
   {
     id: 18,
-    name: "Head Scarves",
+    name: "Head Scarf",
     title: "Head Scarf Supplier Bangladesh",
-    description: `Explore our head scarves collection featuring soft, breathable fabrics with vibrant prints. Ideal for fashion, modest wear, or functional uses.`,
+    image: img4,
+    description:
+      "Stylish, lightweight, and culturally versatile. A strong choice for brands looking for a trusted fashion head scarves supplier.",
     features: [
       {
         heading: "Print Variety",

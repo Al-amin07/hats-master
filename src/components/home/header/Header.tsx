@@ -35,7 +35,7 @@ export default function Header() {
         <div className='md:h-screen  relative'>
             <Swiper
                 grabCursor={true}
-                speed={1200}
+                speed={800}
 
                 scrollbar={{
                     el: '.custom-swiper-scrollbar',
@@ -65,11 +65,11 @@ export default function Header() {
                         <div className="flex items-center relative z-30 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/40">
                             <div className="md:px-24  w-full 
               ">
-                                <h1 className="text-2xl  font-semibold  text-white  text-center  md:text-right  lg:text-[40px]">
+                                <h1 className="text-2xl  font-semibold uppercase  text-white  text-center  md:text-right  lg:text-[40px]">
                                     GLOBAL LEADERS
                                     IN
                                     PRIVATE LABEL <br />
-                                    HEADWEAR SOURCING
+                                    headwear sourcing partner
                                 </h1>
 
                                 <Link href={'/process'} className='flex justify-center md:justify-between items-center gap-2.5 md:gap-0 max-w-[400px] lg:max-w-md  ml-auto mr-auto md:mr-0 mt-6  border p-3 md:p-4 rounded-md cursor-pointer text-white hover:bg-black  hover:border-black transition-colors duration-500'>
@@ -94,7 +94,7 @@ export default function Header() {
               ">
                                 <h1 className="text-2xl uppercase font-semibold  text-white  text-center  md:text-right  lg:text-[40px]">
                                     Headwear manufacturing specialist <br />
-                                    buying agent for importers
+                                   sourcing agent to imports
                                 </h1>
 
                                <Link href={'/process'} className='flex justify-center md:justify-between items-center gap-2.5 md:gap-0 max-w-[400px] lg:max-w-md  ml-auto mr-auto md:mr-0 mt-6  border p-3 md:p-4 rounded-md cursor-pointer text-white hover:bg-black  hover:border-black transition-colors duration-500'>
