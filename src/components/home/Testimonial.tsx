@@ -60,7 +60,7 @@ export default function Testimonial() {
 
 
     return (
-        <div className="min-h-[500px]  elative">
+        <div className="min-h-[400px] max-h-[500px]  relative">
             <h1 className=" text-5xl font-medium text-center  mb-12">Real Reviews from Real Clients</h1>
             <Swiper
                 speed={1200}
@@ -102,7 +102,7 @@ export default function Testimonial() {
                     return (
                         <SwiperSlide
                             key={review.name}
-                            className={`cursor-pointer bg-white  rounded-lg p-8 text-center w-full mx-auto transition-all duration-700 ${isMiddle ? ' scale-125 z-10 shadow-2xl' : 'scale-95 opacity-80'
+                            className={`cursor-pointer bg-white   rounded-lg p-8 text-center w-full mx-auto transition-all duration-700 ${isMiddle ? ' scale-125 z-10 shadow-2xl' : 'scale-95 opacity-80'
                                 }`}
                         >
                             {/* Rating Stars */}

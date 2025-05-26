@@ -1,10 +1,11 @@
 // "use client";
-import Image from "next/image";
-import clientImage from "@/assets/client.gif";
+// import Image from "next/image";
+// import clientImage from "@/assets/client.gif";
 import Link from "next/link";
+import Partner from "./Partner";
 export default function ClientSection() {
   return (
-    <section className="max-w-6xl  mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <section className="max-w-7xl  mx-auto px-6  grid md:grid-cols-2 gap-10 items-center">
       <div className=" pr-8">
         <h2 className="text-3xl md:text-[40px] font-extrabold leading-tight mb-6">
           HEADWEAR <br />
@@ -37,13 +38,14 @@ export default function ClientSection() {
 
       {/* Right Content */}
       <div className=" ">
-        <Image
+        {/* <Image
           src={clientImage}
           alt="Deus Ex Machina"
           width={500}
           height={500}
           className="grayscale"
-        />
+        /> */}
+        <Partner />
       </div>
     </section>
   );

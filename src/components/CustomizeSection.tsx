@@ -19,7 +19,7 @@ const CustomizeSection = () => {
 
                 {/* Text */}
                 <div>
-                    <h2 className="text-5xl  text-gray-700 mb-7">
+                    <h2 className="text-4xl md:text-5xl  text-gray-700 mb-7">
                         CUSTOMIZE YOUR  STYLE
                     </h2>
                     <p className="text-gray-700/80 mb-6 leading-relaxed">
