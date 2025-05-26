@@ -1,15 +1,29 @@
-import img1 from "@/assets/cap/c1.jpg";
-import img2 from "@/assets/cap/c2.avif";
-import img3 from "@/assets/cap/c3.avif";
-import img4 from "@/assets/cap/c4.avif";
-import img5 from "@/assets/cap/cap1.webp";
+import b1 from "@/assets/product/Baseball Caps (1).jpg";
+import b2 from "@/assets/product/Baseball Caps (2).jpg";
+import s1 from "@/assets/product/Snapback Caps (1).jpg";
+import s2 from "@/assets/product/Snapback Caps (2).jpg";
+import t1 from "@/assets/product/Trucker Caps (2).jpg";
+import t2 from "@/assets/product/Trucker Caps (3).jpg";
+import p61 from "@/assets/product/6 Panel Caps  (1).jpg";
+import p62 from "@/assets/product/6 Panel Caps  (2).jpg";
+import bu1 from "@/assets/product/Bucket Hats (1).jpg";
+import bu2 from "@/assets/product/Bucket Hats (2).jpg";
+import d1 from "@/assets/product/Dad Caps (1).jpg";
+import d2 from "@/assets/product/Dad Caps (2).jpg";
+import v1 from "@/assets/product/Visor Caps (1).jpg";
+import v2 from "@/assets/product/Visor Caps (2).jpg";
+import be1 from "@/assets/product/Baseball Caps (1).jpg";
+import be2 from "@/assets/product/Baseball Caps (2).jpg";
+import h1 from "@/assets/product/Baseball Caps (2).jpg";
+import h2 from "@/assets/product/Baseball Caps (2).jpg";
 
 export const capDatas = [
   {
     id: 11,
     name: "Baseball Cap",
     title: "Premium Cotton Baseball Caps for Branding",
-    image: img4,
+    image1: b1,
+    image2: b2,
     description:
       "A timeless design with a curved brim, perfect for teams, retail brands, or promotional use. Trusted by brands seeking a custom baseball hats supplier.",
     description2:
@@ -41,7 +55,8 @@ export const capDatas = [
     id: 12,
     name: "Snapback Cap",
     title: "Flat Brim Snapback Caps with Logo Embroidery",
-    image: img2,
+    image1: s1,
+    image2: s2,
     description:
       "Bold, flat-brim caps with adjustable snaps. A top pick for urban, sports, and lifestyle brands partnering with a reliable flat brim snapback manufacturer.",
     description2:
@@ -65,7 +80,8 @@ export const capDatas = [
     id: 13,
     name: "Trucker Cap",
     title: "Foam Mesh Trucker Caps for Outdoor Promotions",
-    image: img3,
+    image1: t1,
+    image2: t2,
     description:
       "Classic mesh-back caps with a breathable fit and foam front. Designed for companies sourcing mesh trucker caps wholesale for outdoor or promo wear.",
     description2:
@@ -91,7 +107,8 @@ export const capDatas = [
     id: 14,
     name: "6 Panel Cap",
     title: "Structured 6 Panel Caps for Private Label Brands",
-    image: img4,
+    image1: p61,
+    image2: p62,
     description:
       "Structured, stylish, and globally popular. Ideal for fashion labels looking for private label 6 panel caps with high customization options.",
     description2:
@@ -115,7 +132,8 @@ export const capDatas = [
     id: 17,
     name: "Bucket Hat",
     title: "Reversible Streetwear Bucket Hats with Woven Labels",
-    image: img5,
+    image1: bu1,
+    image2: bu2,
     description:
       "Fashion-forward with full sun coverage. Perfect for streetwear and resort brands seeking bucket hats private label production.",
     description2:
@@ -139,7 +157,8 @@ export const capDatas = [
     id: 15,
     name: "Dad Cap",
     title: "Vintage Washed Dad Caps with Custom Patch Options",
-    image: img1,
+    image1: d1,
+    image2: d2,
     description:
       "Low-profile and soft for that vintage casual look. A favorite for streetwear and indie brands working with an unstructured dad hats supplier.",
     description2:
@@ -163,7 +182,8 @@ export const capDatas = [
     id: 16,
     name: "Visor Cap",
     title: "Breathable Sports Visor Caps with Logo Print",
-    image: img2,
+    image1: v1,
+    image2: v2,
     description:
       "Lightweight and open-top great for golf, tennis, and summer campaigns. Trusted by those sourcing custom sun visors for brands with style.",
     description2:
@@ -187,7 +207,8 @@ export const capDatas = [
     id: 18,
     name: "Beanie Hat",
     title: "Soft Knit Beanies for Winter Collections",
-    image: img3,
+    image1: be1,
+    image2: be2,
     description:
       "Warm, stretchy, and ready for winter drops. Ideal for labels that want quality from a reliable knit beanies manufacturer.",
     description2:
@@ -211,7 +232,8 @@ export const capDatas = [
     id: 19,
     name: "Head Scarf",
     title: "Custom Printed Head Scarves for Fashion Brands",
-    image: img4,
+    image1: h1,
+    image2: h2,
     description:
       "Stylish, lightweight, and culturally versatile. A strong choice for brands looking for a trusted fashion head scarves supplier.",
     description2:

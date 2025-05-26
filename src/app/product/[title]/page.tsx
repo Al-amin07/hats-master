@@ -54,9 +54,8 @@ export default async function ProductDetailsPage({
   return (
     <div className=" mt-20 ">
       <div
-        className={`container p-6 md:p-8 lg:p-16 mx-auto flex flex-col ${
-          cap.id % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-        } items-start gap-6`}
+        className={`container p-6 md:p-8 lg:p-16 mx-auto flex flex-col ${cap.id % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+          } items-start gap-6`}
       >
         {/* Left Content */}
         <div className="lg:w-1/2">
@@ -81,13 +80,13 @@ export default async function ProductDetailsPage({
               GET A QUOTE/ REQUEST SAMPLES
             </button>
           </Link>
-       
+
         </div>
 
         {/* Right Image */}
         <div className="lg:w-1/2">
           <Image
-            src={cap.image as string | StaticImageData}
+            src={cap.image2 as string | StaticImageData}
             alt="Baseball cap manufacturers in Bangladesh"
             className=" shadow-md min-h-[400px] md:min-h-[450px]"
             height={800}

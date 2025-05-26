@@ -77,19 +77,19 @@ export default function ProductSection() {
                                     key={index}
                                     className="select-none bg-white  cursor-pointer border-b-2 border-transparent   overflow-hidden transition-all duration-500 hover:shadow-2xl"
                                 >
-                                   <Link href={`/product/${slugify(el.name)}`}>
-                                    <Image
-                                        src={el.image}
-                                        alt={el.name}
-                                        height={200}
-                                        width={300}
-                                        className="w-full h-80 object-cover"
-                                    />
-                                    <div className="p-4">
-                                        <h3 className="text-xl font-semibold text-gray-800">{el?.name}</h3>
-                                        <p className="text-gray-600  mt-1">{el.description}</p>
-                                    </div>
-                                   </Link>
+                                    <Link href={`/product/${slugify(el.name)}`}>
+                                        <Image
+                                            src={el.image1}
+                                            alt={el.name}
+                                            height={200}
+                                            width={300}
+                                            className="w-full h-80 object-cover"
+                                        />
+                                        <div className="p-4">
+                                            <h3 className="text-xl font-semibold text-gray-800">{el?.name}</h3>
+                                            <p className="text-gray-600  mt-1">{el.description}</p>
+                                        </div>
+                                    </Link>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
