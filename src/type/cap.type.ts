@@ -9,4 +9,5 @@ export interface ICap {
   image1: string | StaticImageData;
   image2: string | StaticImageData;
   features: { heading: string; content: string }[];
+  featuresDetails: string;
 }

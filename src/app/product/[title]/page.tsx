@@ -94,6 +94,21 @@ export default async function ProductDetailsPage({
           />
         </div>
       </div>
+      <div>
+        <div className="container p-6 md:p-8 lg:px-16 mx-auto flex flex-col items-start gap-6">
+          <h2 className="text-2xl pb-5 border-b border-gray-500 md:text-xl uppercase font-bold text-gray-900 mb-4">
+            {cap?.name} Features
+          </h2>
+          <ul className="list-disc pl-5 space-y-2">
+            {cap?.features?.map((feature, index) => (
+              <li key={index} className="text-gray-700">
+                <strong>{feature.heading} : </strong> {feature.content}
+              </li>
+            ))}
+          </ul>
+          <p className="text-gray-700 mt-3">{cap?.featuresDetails}</p>
+        </div>
+      </div>
     </div>
   );
 }
