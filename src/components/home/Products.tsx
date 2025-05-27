@@ -81,9 +81,9 @@ export default function ProductSection() {
                                         <Image
                                             src={el.image1}
                                             alt={el.name}
-                                            height={200}
+                                            height={400}
                                             width={300}
-                                            className="w-full h-80 object-cover"
+                                            className="w-full h-80 "
                                         />
                                         <div className="p-4">
                                             <h3 className="text-xl font-semibold text-gray-800">{el?.name}</h3>
