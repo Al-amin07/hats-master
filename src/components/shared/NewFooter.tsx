@@ -76,9 +76,9 @@ export default function NewFooter() {
                 – Qualified labor force. <br />
                 – Geographical proximity to main Asian markets...
               </p>
-              <button className="mt-4 px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-all text-sm">
-                REQUEST ONLINE FORM
-              </button>
+              <Link href={'/contact'} className="mt-4 inline-block px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-all text-sm">
+                REQUEST FREE SAMPLE
+              </Link>
             </div>
           </div>
         </div>

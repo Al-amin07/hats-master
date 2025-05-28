@@ -29,11 +29,15 @@ export default function Navbar() {
   const navLinks = [
     { href: "/", label: "HOME" },
     { href: "#", label: "PRODUCT" },
-    { href: "/process", label: "OUR PROCESS" },
+    { href: "#", label: "RESOURCES" },
     { href: "/about", label: "ABOUT" },
     { href: "/contact", label: "CONTACT" },
   ];
 
+  const resourcesLinks = [
+    { href: "/process", label: "Our Process" },
+    { href: "/lead-payment", label: "Lead time, payment & shipping" },
+  ];
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -133,7 +137,7 @@ export default function Navbar() {
                   {link.label}
                 </Link>
                 <div
-                  className={`absolute hidden  top-16 lg:top-20 left-[135px] w-[125px] bg-gray-100 text-black/75 shadow-lg ${
+                  className={`absolute hidden  top-16 lg:top-20 left-[135px] w-[125px] bg-gray-50 text-black/75 shadow-lg ${
                     link.label === "PRODUCT" && "group-hover:flex"
                   }`}
                 >
@@ -155,7 +159,7 @@ export default function Navbar() {
                         </Link>
 
                         <div
-                          className={`absolute top-0 z-20 left-[123px] w-[125px] bg-gray-100 text-black/75 shadow-lg hidden ${
+                          className={`absolute top-0 z-20 left-[123px] w-[125px] bg-gray-50 text-black/75 shadow-lg hidden ${
                             cap.name === "Hats & Caps" &&
                             "group-hover/item:flex"
                           }`}
@@ -172,6 +176,27 @@ export default function Navbar() {
                             ))}
                           </div>
                         </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {/* Resources */}
+                <div
+                  className={`absolute hidden  top-24 lg:top-20 left-[25%] md:left-[40%] w-[170px]  text-black/75 shadow-lg ${
+                    link.label === "RESOURCES" && "group-hover:flex"
+                  }`}
+                >
+                  <div className="flex flex-col  bg-gray-50 w-full">
+                    {resourcesLinks.map((cap) => (
+                      <div key={cap.href} className=" relative group/item">
+                        <Link
+                          href={cap?.href}
+                          className="py-2.5  group
+                                              px-2 text-base flex items-center justify-between gap-1 w-full text-gray-900  dark:text-gray-200 hover:bg-black hover:text-white transition-all duration-300  dark:hover:bg-slate-400/50  
+                                            "
+                        >
+                          {cap.label}
+                        </Link>
                       </div>
                     ))}
                   </div>
