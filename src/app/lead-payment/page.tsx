@@ -90,7 +90,6 @@ export default function LeadPaymentPage() {
           ))}
         </div>
       </div>
-
       <LeadPaymentDelivery />
     </div>
   );

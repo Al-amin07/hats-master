@@ -1,7 +1,26 @@
 // app/components/Footer.tsx
+import { slugify } from "@/service/slug";
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+const links = [
+  { id: 11, name: "Baseball Cap" },
+  { id: 13, name: "Snapback Cap" },
+  { id: 12, name: "Trucker Cap" },
+  { id: 14, name: "6 Panel Cap" },
+  { id: 16, name: "Dad Cap" },
+  { id: 16, name: "Visor Cap" },
+  { id: 15, name: "Bucket Hat" },
+  { id: 2, name: "Beanie Hat" },
+  { id: 3, name: "Head Scarf" },
+];
 export default function NewFooter() {
   return (
     <footer className="bg-[#1a232c] text-white px-6 md:px-20 py-10">
@@ -14,21 +33,36 @@ export default function NewFooter() {
               Hats<span className="text-white">Master</span>
             </h1>
             <p className="text-sm text-gray-400 mt-2 max-w-sm">
-           Hats Master is a Bangladesh-based headwear manufacturer, offering custom hats and caps for brands worldwide. We specialize in sourcing, production, and development with the highest quality standards.
+              Hats Master is a Bangladesh-based headwear manufacturer, offering
+              custom hats and caps for brands worldwide. We specialize in
+              sourcing, production, and development with the highest quality
+              standards.
             </p>
 
             {/* Socials */}
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+              <a
+                href="#"
+                className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+              <a
+                href="#"
+                className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+              >
                 <FaTwitter />
               </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+              <a
+                href="#"
+                className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+              >
                 <FaYoutube />
               </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+              <a
+                href="#"
+                className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+              >
                 <FaLinkedinIn />
               </a>
             </div>
@@ -36,9 +70,29 @@ export default function NewFooter() {
 
           {/* Contact + Services + Why */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:w-2/3">
+            {/* Textile Services */}
+            <div>
+              <h4 className="text-white font-semibold mb-2 inline-block">
+                Our Products
+              </h4>
+              <ul className="mt-4 text-sm text-gray-300 space-y-2">
+                {links.map((el) => (
+                  <li key={el.id}>
+                    <Link
+                      className="hover:underline"
+                      href={`/product/${slugify(el.name)}`}
+                    >
+                      {el.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
             {/* Contact Us */}
             <div>
-              <h4 className="text-white font-semibold mb-2  inline-block">Contact Us</h4>
+              <h4 className="text-white font-semibold mb-2  inline-block">
+                Contact Us
+              </h4>
               <div className="text-sm mt-4 space-y-3 text-gray-300">
                 <div className="flex items-start gap-2">
                   <FaMapMarkerAlt className="mt-1 text-white" />
@@ -55,28 +109,22 @@ export default function NewFooter() {
               </div>
             </div>
 
-            {/* Textile Services */}
-            <div>
-              <h4 className="text-white font-semibold mb-2 inline-block">Textile Services</h4>
-              <ul className="mt-4 text-sm text-gray-300 space-y-2">
-                <li>Development and planning</li>
-                <li>Samples</li>
-                <li>Pricing</li>
-                <li>Production</li>
-                <li>Quality control</li>
-                <li>Logistics</li>
-              </ul>
-            </div>
-
             {/* Why Apparelx */}
             <div>
-              <h4 className="text-white font-semibold mb-2 0 inline-block">Why Hats Master</h4>
-              <p className="mt-4 text-white font-semibold">Made in Bangladesh</p>
-              <p className="text-sm text-gray-300 mt-2">
-                – Qualified labor force. <br />
-                – Geographical proximity to main Asian markets...
+              <h4 className="text-white font-semibold mb-2 0 inline-block">
+                Why Hats Master
+              </h4>
+              <p className="mt-4 text-white font-semibold">
+                Made in Bangladesh
               </p>
-              <Link href={'/contact'} className="mt-4 inline-block px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-all text-sm">
+              <p className="text-sm text-gray-300 mt-2">
+                – Qualified labor force. <br />– Geographical proximity to main
+                Asian markets...
+              </p>
+              <Link
+                href={"/contact"}
+                className="mt-4 inline-block px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-all text-sm"
+              >
                 REQUEST FREE SAMPLE
               </Link>
             </div>
@@ -86,7 +134,8 @@ export default function NewFooter() {
         {/* Bottom Section */}
         <div className="text-sm text-gray-400 mt-6 flex flex-col md:flex-row justify-between items-center gap-2">
           <p>
-            Copyright © 2025 <span className="text-red-600">Hats Master</span>. All rights reserved.
+            Copyright © 2025 <span className="text-red-600">Hats Master</span>.
+            All rights reserved.
           </p>
           <div className="flex space-x-4">
             <Link href="/about">About Us</Link>

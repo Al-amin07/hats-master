@@ -21,36 +21,42 @@ export async function POST(req: Request) {
       replyTo: email,
       subject: "New Contact Form Submission",
       html: `
-        <div style="font-family: 'Segoe UI', sans-serif; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 24px; border-radius: 8px; background: #ffffff;">
-    <h2 style="color: #d32f2f; margin-bottom: 16px;">📩 New Contact Message</h2>
+ <div style="background: #f0f4f8; padding: 40px 16px; font-family: 'Helvetica Neue', sans-serif;">
+    <div style="max-width: 600px; margin: auto; background: white; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); overflow: hidden;">
 
-    <table style="width: 100%; margin-bottom: 24px;">
-      <tr>
-        <td style="font-weight: bold; padding: 4px 0;">Name:</td>
-        <td style="padding: 4px 0;">${name}</td>
-      </tr>
-      <tr>
-        <td style="font-weight: bold; padding: 4px 0;">Email:</td>
-        <td style="padding: 4px 0;"><a href="mailto:${email}">${email}</a></td>
-      </tr>
-      <tr>
-        <td style="font-weight: bold; padding: 4px 0;">Phone:</td>
-        <td style="padding: 4px 0;">${phone || "N/A"}</td>
-      </tr>
-    </table>
-
-    <div style="margin-bottom: 24px;">
-      <p style="font-weight: bold; margin-bottom: 8px;">Message:</p>
-      <div style="background: #f9f9f9; padding: 12px; border-left: 4px solid #d32f2f; border-radius: 4px; line-height: 1.6;">
-        ${comment.replace(/\n/g, "<br />")}
+      <div style="background: linear-gradient(135deg, #2b6cb0, #2c5282); color: #fff; padding: 24px 32px;">
+        <h2 style="margin: 0; font-size: 22px;">New Contact Request 📬</h2>
+        <p style="margin: 4px 0 0;">From your HatsMaster website</p>
       </div>
+
+      <div style="padding: 24px 32px; color: #333;">
+        <h3 style="margin-bottom: 16px; font-size: 18px;">Contact Details</h3>
+        <table style="width: 100%; font-size: 15px; border-spacing: 0 10px;">
+          <tr>
+            <td style="font-weight: 600;">Name:</td>
+            <td>${name}</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600;">Email:</td>
+            <td><a href="mailto:${email}" style="color: #2b6cb0;">${email}</a></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600;">Phone:</td>
+            <td>${phone || "N/A"}</td>
+          </tr>
+        </table>
+
+        <h3 style="margin: 24px 0 8px; font-size: 18px;">Message</h3>
+        <div style="background: #f9fafb; padding: 16px; border-left: 4px solid #2b6cb0; border-radius: 6px; font-size: 14px; line-height: 1.6;">
+          ${comment.replace(/\n/g, "<br />")}
+        </div>
+      </div>
+
+      <div style="background: #edf2f7; padding: 16px 32px; font-size: 12px; text-align: center; color: #666;">
+        &copy; ${new Date().getFullYear()} HatsMaster — Crafted with care.
+      </div>
+
     </div>
-
-    <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
-
-    <footer style="font-size: 12px; color: #888; text-align: center;">
-      Sent from the <strong>HatsMaster</strong> website contact form.
-    </footer>
   </div>
       `,
     });
