@@ -11,6 +11,18 @@ import TransitionToBangladesh from '@/components/TransitionToBangladesh'
 import Link from 'next/link'
 import CustomizeSection from '@/components/CustomizeSection'
 import Certificate from '@/components/Certificate'
+export const metadata = {
+    title: 'About Us | Trusted Global Headwear Sourcing Partner',
+    description:
+        'Learn about our sourcing company specializing in premium caps, hats, and headwear accessories. Discover how we help global buyers find high-quality, custom-manufactured products with confidence.',
+    keywords: [
+        'headwear sourcing company',
+        'about cap supplier',
+        'hat manufacturer background',
+        'sourcing agent caps',
+        'OEM headwear partner'
+    ]
+};
 
 export default function AboutUsPge() {
     return (

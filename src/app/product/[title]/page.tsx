@@ -18,10 +18,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const name = unslugify((await params).title);
   const product = capDatas.find((el) => el.name === name);
-
   return {
-    title: product?.title || "Hatsmaster",
-    description: product?.description2,
+    title: `${product?.title} | Hats Master`,
+    description: `${product?.description} | ${product?.description2} | Hats Master`,
+    keywords: `${product?.name}, ${product?.title}, custom hats, premium caps, hats supplier`,
+
   };
 }
 

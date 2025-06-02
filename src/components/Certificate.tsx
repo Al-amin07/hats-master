@@ -12,7 +12,7 @@ export default function Certificate() {
 
     <div className="flex flex-col md:flex-row gap-8  max-w-7xl mx-auto ">
       {/* Main Content */}
-      <div className="md:w-3/4 shadow-2xl py-7 shadow-black/70">
+      <div className="md:w-3/4 shadow-lg py-7 shadow-black/50">
         <h2 className="text-base mb-4 text-center px-8">
           We know that premium headwear manufacturing is about more than style — it’s about sustainability, safety, and social responsibility. That’s why every partner factory we collaborate with strictly follows globally recognized compliance certifications to deliver top-quality hats, caps, and headwear that meet the highest international standards.
 
@@ -24,7 +24,7 @@ export default function Certificate() {
         <div className="max-w-4xl mx-auto grid grid-cols-2 p-12 gap-5 mt-12">
           {
             images.map((el, ind) => <div className=" flex items-center justify-center" key={ind}>
-              <Image src={el} height={300} width={300} className=" hover:shadow-2xl transition-all hover:scale-110 duration-700 cursor-pointer" alt="certificate image" />
+              <Image src={el} height={300} width={300} className="mix-blend-multiply hover:shadow-2xl transition-all hover:scale-110 duration-700 cursor-pointer" alt="certificate image" />
             </div>)
           }
         </div>
