@@ -29,10 +29,10 @@ export default function NewFooter() {
         <div className="flex flex-col md:flex-row justify-between border-b border-white/10 pb-8">
           {/* Left Logo and Desc */}
           <div className="md:w-1/3 mb-8 md:mb-0">
-            <h1 className="text-2xl font-bold text-white">
+            <h1 className="text-2xl mb-2 font-bold uppercase text-white">
               Hats<span className="text-white">Master</span>
             </h1>
-            <p className="text-sm text-gray-400 mt-2 max-w-sm">
+            <p className="text-sm text-gray-400 mt-4 max-w-sm">
               Hatsmaster is your behind-the-scenes partner for premium custom headwear in Bangladesh, worn worldwide. We turn your vision into reality with full-package development, precision sourcing, and production that meets the highest global standards.
             </p>
 
@@ -57,10 +57,10 @@ export default function NewFooter() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:w-2/3">
             {/* Textile Services */}
             <div>
-              <h4 className="text-white font-semibold mb-2 inline-block">
+              <h4 className="text-white uppercase text-2xl font-semibold mb-2 inline-block">
                 Our Products
               </h4>
-              <ul className="mt-4 text-sm text-gray-300 space-y-2">
+              <ul className="mt-2 text-sm text-gray-300 space-y-2">
                 {links.map((el) => (
                   <li key={el.id}>
                     <Link
@@ -75,17 +75,17 @@ export default function NewFooter() {
             </div>
             {/* Contact Us */}
             <div>
-              <h4 className="text-white font-semibold mb-2  inline-block">
+              <h4 className="text-white text-2xl uppercase font-semibold mb-2  inline-block">
                 Contact Us
               </h4>
-              <div className="text-sm mt-4 space-y-3 text-gray-300">
+              <div className="text-sm mt-2 space-y-3 text-gray-300">
                 <div className="flex items-start gap-2">
                   <FaMapMarkerAlt className="mt-1 text-white" />
                   <p>House- 10, Road- 12, Sector- 04, Uttara, Dhaka, Bangladesh.</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <FaPhoneAlt className="mt-1 text-white" />
-                  <p>+8801611247183</p>
+                  <p>+8801611-247183</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <FaEnvelope className="mt-1 text-white" />
@@ -96,10 +96,10 @@ export default function NewFooter() {
 
             {/* Why Apparelx */}
             <div>
-              <h4 className="text-white font-semibold mb-2 0 inline-block">
+              <h4 className="text-white uppercase text-2xl font-semibold mb-2 0 inline-block">
                 Why Hats Master
               </h4>
-              <p className="mt-4 text-white font-semibold">
+              <p className="mt-2 text-white font-semibold">
                 Made in Bangladesh
               </p>
               <p className="text-sm text-gray-300 mt-2">

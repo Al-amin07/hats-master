@@ -1,5 +1,5 @@
 import ContactForm from '@/components/ContactForm'
-import ContactInfo from '@/components/ContactInfo'
+// import ContactInfo from '@/components/ContactInfo'
 import FAQSection from '@/components/FaqSection'
 import React from 'react'
 export const metadata = {
@@ -17,7 +17,7 @@ export const metadata = {
 const details = [
   {
     name: "Phone",
-    desc: "+8801611247183",
+    desc: "+8801611-247183",
   },
 
   {
@@ -53,9 +53,9 @@ export default function ContactPage() {
         </div>
         <ContactForm />
       </div>
-      <div className='px-5 space-y-16 container md:px-8 lg:px-16 mx-auto'>
+      <div className='px-5 mt-12 space-y-16 container md:px-8 lg:px-16 mx-auto'>
         <FAQSection />
-        <ContactInfo />
+        {/* <ContactInfo /> */}
       </div>
     </div>
   )
