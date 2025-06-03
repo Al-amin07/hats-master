@@ -82,6 +82,7 @@ export default function ProductSection() {
                                             <Image
                                                 src={el.image1}
                                                 alt={el.name}
+                                                title={el.title}
                                                 fill
                                                 className="object-cover group-hover:scale-110 transition-all duration-500 bg-center w-full h-full"
                                             />

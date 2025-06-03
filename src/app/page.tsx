@@ -51,7 +51,7 @@ export default function Home() {
       <MenuFacture />
       <SourcingSection />
 
-      {/* <Testimonial /> */}
+
       <ClientSection />
     </div>
   );

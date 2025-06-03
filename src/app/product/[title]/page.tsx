@@ -89,7 +89,7 @@ export default async function ProductDetailsPage({
           <Image
             src={cap.image2 as string | StaticImageData}
             alt="Baseball cap manufacturers in Bangladesh"
-            className=" border rounded-sm min-h-[400px]"
+            className=" border rounded-sm min-h-[400px] max-h-[700px] w-full object-fill"
             height={800}
             width={700}
           />

@@ -14,18 +14,49 @@ export const metadata = {
     'OEM headwear inquiry'
   ]
 };
+const details = [
+  {
+    name: "Phone",
+    desc: "+8801611247183",
+  },
 
+  {
+    name: "Email",
+    desc: "info.hatsmaster@gmail.com",
+  },
+  {
+    name: "Our Address",
+    desc: "House- 10, Road- 12, Sector- 04, Uttara, Dhaka, Bangladesh.",
+  },
+];
 export default function ContactPage() {
   return (
-    <div className='mt-28 space-y-16 container px-5 md:px-8 lg:px-16 mx-auto'>
+    <div className='mt-28 space-y-16  '>
       <div className=' max-w-3xl mx-auto'>
 
-        <h2 className="text-4xl    uppercase  mb-8">how can we help you?</h2>
+        <h2 className="text-4xl text-center   uppercase  mb-8">how can we help you?</h2>
       </div>
 
-      <ContactForm />
-      <FAQSection />
-      <ContactInfo />
+      <div className='flex flex-col md:flex-row items-center '>
+        <div className='bg-[#F6EFE4] max-w-lg p-8 md:p-12 lg:p-24 '>
+          <h2 className='text-4xl font-semibold mb-6'>Get in Touch</h2>
+          <div>
+            {
+              details.map((el, ind: number) => <div key={ind} className="mb-5">
+                <h3 className="font-semibold text-xl text-gray-800 mb-1">{el.name} : </h3>
+                <p className=" text-gray-600 text-lg leading-relaxed">
+                  {el.desc}
+                </p>
+              </div>)
+            }
+          </div>
+        </div>
+        <ContactForm />
+      </div>
+      <div className='px-5 space-y-16 container md:px-8 lg:px-16 mx-auto'>
+        <FAQSection />
+        <ContactInfo />
+      </div>
     </div>
   )
 }

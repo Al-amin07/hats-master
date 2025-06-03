@@ -14,8 +14,8 @@ import v1 from "@/assets/product/Visor Caps (1).jpg";
 import v2 from "@/assets/product/Visor Caps (2).jpg";
 import be1 from "@/assets/product/bennie1.jpg";
 import be2 from "@/assets/product/bennie2.jpg";
-import h1 from "@/assets/product/Baseball Caps (2).jpg";
-import h2 from "@/assets/product/Baseball Caps (2).jpg";
+import h1 from "@/assets/product/head3.jpg";
+import h2 from "@/assets/product/head4.jpg";
 import { ICap } from "@/type/cap.type";
 
 export const capDatas: ICap[] = [

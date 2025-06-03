@@ -3,8 +3,8 @@ import { slugify } from "@/service/slug";
 import Link from "next/link";
 import {
   FaFacebookF,
-  FaTwitter,
-  FaYoutube,
+  // FaTwitter,
+  // FaYoutube,
   FaLinkedinIn,
   FaPhoneAlt,
   FaEnvelope,
@@ -23,47 +23,32 @@ const links = [
 ];
 export default function NewFooter() {
   return (
-    <footer className="bg-[#1a232c] text-white px-6 md:px-20 py-10">
+    <footer className="bg-[#1a232c] text-white px-6 md:px-20 py-16">
       <div className="max-w-7xl mx-auto">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between border-b border-white/10 pb-8">
           {/* Left Logo and Desc */}
           <div className="md:w-1/3 mb-8 md:mb-0">
-            <h1 className="text-2xl font-bold text-red-600">
+            <h1 className="text-2xl font-bold text-white">
               Hats<span className="text-white">Master</span>
             </h1>
             <p className="text-sm text-gray-400 mt-2 max-w-sm">
-              Hats Master is a Bangladesh-based headwear manufacturer, offering
-              custom hats and caps for brands worldwide. We specialize in
-              sourcing, production, and development with the highest quality
-              standards.
+              Hatsmaster is your behind-the-scenes partner for premium custom headwear in Bangladesh, worn worldwide. We turn your vision into reality with full-package development, precision sourcing, and production that meets the highest global standards.
             </p>
 
             {/* Socials */}
             <div className="flex space-x-4 mt-6">
               <a
                 href="#"
-                className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+                className="p-2 bg-gray-800 border  rounded-full hover:bg-white hover:text-black transition-all duration-300"
               >
-                <FaFacebookF />
+                <FaFacebookF size={24} />
               </a>
               <a
                 href="#"
-                className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+                className="p-2 bg-gray-800 border rounded-full hover:bg-white hover:text-black transition-all duration-300"
               >
-                <FaTwitter />
-              </a>
-              <a
-                href="#"
-                className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300"
-              >
-                <FaYoutube />
-              </a>
-              <a
-                href="#"
-                className="p-2 bg-gray-800 rounded-full hover:bg-white hover:text-black transition-all duration-300"
-              >
-                <FaLinkedinIn />
+                <FaLinkedinIn size={24} />
               </a>
             </div>
           </div>
@@ -96,11 +81,11 @@ export default function NewFooter() {
               <div className="text-sm mt-4 space-y-3 text-gray-300">
                 <div className="flex items-start gap-2">
                   <FaMapMarkerAlt className="mt-1 text-white" />
-                  <p>House #00, Road #00, Dhaka, Bangladesh</p>
+                  <p>House- 10, Road- 12, Sector- 04, Uttara, Dhaka, Bangladesh.</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <FaPhoneAlt className="mt-1 text-white" />
-                  <p>+880 1234-567890</p>
+                  <p>+8801611247183</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <FaEnvelope className="mt-1 text-white" />
@@ -144,12 +129,13 @@ export default function NewFooter() {
           </div>
         </div>
 
-        {/* Legal Links */}
+        {/* Legal Links for Hats Master */}
         <div className="text-xs text-gray-500 mt-4 text-center space-x-2">
-          <Link href="#">Política de Privacidade</Link>
+          <span className="text-gray-300">Privacy Policy</span>
           <span className="text-red-500">–</span>
-          <Link href="#">Livro De Reclamações Online</Link>
+          <span className="text-gray-300">Online Complaint Portal</span>
         </div>
+
       </div>
     </footer>
   );
