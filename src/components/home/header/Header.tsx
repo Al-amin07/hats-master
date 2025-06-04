@@ -17,9 +17,15 @@ import {
     HashNavigation,
     Autoplay,
 } from 'swiper/modules';
-import img2 from '@/assets/test/blaack3.jpg'
-import img1 from '@/assets/test/black2.jpg'
-import img3 from '@/assets/test/black1.jpg'
+import img2 from '@/assets/test/new1.jpg'
+import img1 from '@/assets/test/new2.jpg'
+import img3 from '@/assets/test/next4.jpg'
+// import img2 from '@/assets/test/r1.jpg'
+// import img1 from '@/assets/test/r2.jpg'
+// import img3 from '@/assets/test/r3.jpg'
+// import img2 from '@/assets/test/blaack3.jpg'
+// import img1 from '@/assets/test/black2.jpg'
+// import img3 from '@/assets/test/black1.jpg'
 // import img2 from '@/assets/banner/banner5.jpg'
 // import img1 from '@/assets/banner/b5.jpg'
 // import img3 from '@/assets/banner/b7.jpeg'
@@ -59,7 +65,7 @@ export default function Header() {
                     <div className="w-full   min-h-[calc(100vh-48px)] "
 
                     >
-                        <Image src={img1} alt='vsdv' className='h-full w-full' fill />
+                        <Image src={img1} alt='vsdv' className='h-full w-full object-cover' fill />
                         <div className="flex items-center relative z-30 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/10">
                             <div className="md:px-24  w-full 
               ">
@@ -86,7 +92,7 @@ export default function Header() {
                     <div className="w-full   min-h-[calc(100vh-48px)] "
 
                     >
-                        <Image src={img2} alt='vsdv' className='h-full w-full' fill />
+                        <Image src={img2} alt='vsdv' className='h-full w-full object-cover' fill />
                         <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/10">
                             <div className=" md:px-24  w-full 
               ">
@@ -111,8 +117,8 @@ export default function Header() {
                     <div className="w-full   min-h-[calc(100vh-48px)] "
 
                     >
-                        <Image src={img3} alt='vsdv' className='h-full w-full' fill />
-                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/10">
+                        <Image src={img3} alt='vsdv' className='h-full w-full object-cover' fill />
+                        <div className="flex  items-center relative z-30 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/10">
                             <div className="md:px-24  w-full 
               ">
                                 <h1 className="text-2xl uppercase font-semibold  text-white  text-center  md:text-right  lg:text-[40px]">
@@ -131,6 +137,7 @@ export default function Header() {
                     </div>
 
                 </SwiperSlide>
+
 
             </Swiper>
             <div className="h-12  hidden md:flex  items-center  rounded-b-2xl  bg-[#3d3d3d] opacity-60 relative">
