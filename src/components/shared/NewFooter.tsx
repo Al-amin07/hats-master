@@ -2,10 +2,10 @@
 import { slugify } from "@/service/slug";
 import Link from "next/link";
 import {
-  FaFacebookF,
+  // FaFacebookF,
   // FaTwitter,
   // FaYoutube,
-  FaLinkedinIn,
+  // FaLinkedinIn,
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
@@ -35,9 +35,20 @@ export default function NewFooter() {
             <p className="text-sm text-gray-400 mt-4 max-w-sm">
               Hatsmaster is your behind-the-scenes partner for premium custom headwear in Bangladesh, worn worldwide. We turn your vision into reality with full-package development, precision sourcing, and production that meets the highest global standards.
             </p>
+            <div>
+              <h1 className="text-lg font-medium mb-2 mt-5">What We Do
+              </h1>
+              <ul className="space-y-2 ">
+                <li className=" text-sm text-gray-300">Private Label Headwear</li>
+                <li className=" text-sm text-gray-300">OEM & Custom Cap Manufacturing</li>
+                <li className=" text-sm text-gray-300">Sustainable & Ethical Sourcing</li>
+                <li className=" text-sm text-gray-300">Design-to-Delivery Solutions</li>
+              </ul>
+
+            </div>
 
             {/* Socials */}
-            <div className="flex space-x-4 mt-6">
+            {/* <div className="flex space-x-4 mt-6">
               <a
                 href="#"
                 className="p-2 bg-gray-800 border  rounded-full hover:bg-white hover:text-black transition-all duration-300"
@@ -50,7 +61,7 @@ export default function NewFooter() {
               >
                 <FaLinkedinIn size={24} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact + Services + Why */}
@@ -120,8 +131,7 @@ export default function NewFooter() {
         {/* Bottom Section */}
         <div className="text-sm text-gray-400 mt-6 flex flex-col md:flex-row justify-between items-center gap-2">
           <p>
-            Copyright © 2025 <span className="text-red-600">Hats Master</span>.
-            All rights reserved.
+            © HATSMASTER. All Rights Reserved. | Crafted in Bangladesh. Built for the world.
           </p>
           <div className="flex space-x-4">
             <Link href="/about">About Us</Link>

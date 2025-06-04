@@ -36,7 +36,7 @@ export default function Navbar() {
 
   const resourcesLinks = [
     { href: "/process", label: "Our Process" },
-    { href: "/lead-payment", label: "Lead time, payment & shipping" },
+    { href: "/lead-payment", label: "Payment & Shipping" },
   ];
   useEffect(() => {
     const handleScroll = () => {

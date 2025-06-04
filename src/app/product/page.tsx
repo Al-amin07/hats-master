@@ -72,7 +72,7 @@ export default function AllProductsPage() {
                 ))}
             </div>
             <div className='flex justify-center mt-10'>
-                <Link className='bg-black text-white py-1.5 px-5 hover:bg-white hover:text-black border border-black transition-all duration-500' href={"/contact"}>
+                <Link className='bg-black  text-white py-1.5 px-5 hover:bg-white hover:text-black border border-black transition-all duration-500' href={"/contact"}>
                     Let&apos;s Talk
                 </Link>
             </div>
