@@ -46,7 +46,7 @@ export default function LeadPaymentPage() {
   ];
   return (
     <div className="mt-24 space-y-16 mx-auto max-w-7xl px-5 md:px-12 lg:px-16 ">
-      <div className="max-w-xl  flex flex-col items-center mx-auto">
+      <div className="  flex flex-col items-center mx-auto">
         <h1 className="text-3xl  mb-5 font-medium">Sample Development Time</h1>
         <Clock size={40} className=" text-red-600" />
         <p className="my-5 text-center md:text-lg">

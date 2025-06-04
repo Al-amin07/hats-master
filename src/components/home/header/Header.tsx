@@ -18,7 +18,7 @@ import {
     Autoplay,
 } from 'swiper/modules';
 import img2 from '@/assets/test/new1.jpg'
-import img1 from '@/assets/test/new2.jpg'
+import img1 from '@/assets/test/new5.jpg'
 import img3 from '@/assets/test/next4.jpg'
 // import img2 from '@/assets/test/r1.jpg'
 // import img1 from '@/assets/test/r2.jpg'
@@ -141,7 +141,6 @@ export default function Header() {
 
             </Swiper>
             <div className="h-12  hidden md:flex  items-center  rounded-b-2xl  bg-[#3d3d3d] opacity-60 relative">
-                {/* Swiper will inject the scrollbar drag element here */}
                 <div className="custom-swiper-scrollbar w-[40%] h-1  rounded relative overflow-hidden"></div>
             </div>
             <div className="absolute left-1/2 -translate-x-1/2 bottom-3 md:bottom-1.5 z-30 flex items-center  mt-4  gap-3">

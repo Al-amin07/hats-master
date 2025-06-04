@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 
-import img from "@/assets/dhaka.jpg";
+import img from "@/assets/d2.jpg";
+// import img from "@/assets/dhaka.jpg";
+// import img from "@/assets/dhaka.jpg";
 import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";

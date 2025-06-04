@@ -26,8 +26,10 @@ export const metadata = {
 
 export default function AllProductsPage() {
     return (
-        <div className="max-w-7xl  px-5 md:px-12 lg:px-16 mx-auto mt-24 py-10">
-            <h1 className="text-3xl font-medium text-center mb-10">Premium Caps & Accessories – Sourced for You</h1>
+        <div className="max-w-7xl  px-5 md:px-12 lg:px-16 mx-auto mt-24 pt-10 ">
+            <h1 className="text-3xl font-medium text-right mb-6">Premium Private Label Headwear Supplier
+            </h1>
+            <p className='text-right mb-10'>With roots in the garment and textile hub of South Asia, <br /> we combine Bangladesh’s production strength with global design intelligence, <br /> creating high-quality headwear solutions that align with your brand’s vision, values, and goals.</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {capDatas.map((cap) => (
@@ -68,6 +70,11 @@ export default function AllProductsPage() {
                         </div>
                     </Link>
                 ))}
+            </div>
+            <div className='flex justify-center mt-10'>
+                <Link className='bg-black text-white py-1.5 px-5 hover:bg-white hover:text-black border border-black transition-all duration-500' href={"/contact"}>
+                    Let&apos;s Talk
+                </Link>
             </div>
         </div>
     );
