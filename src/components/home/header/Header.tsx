@@ -17,9 +17,12 @@ import {
     HashNavigation,
     Autoplay,
 } from 'swiper/modules';
-import img2 from '@/assets/banner/banner5.jpg'
-import img1 from '@/assets/banner/b5.jpg'
-import img3 from '@/assets/banner/b7.jpeg'
+import img2 from '@/assets/test/blaack3.jpg'
+import img1 from '@/assets/test/black2.jpg'
+import img3 from '@/assets/test/black1.jpg'
+// import img2 from '@/assets/banner/banner5.jpg'
+// import img1 from '@/assets/banner/b5.jpg'
+// import img3 from '@/assets/banner/b7.jpeg'
 import Image from 'next/image';
 import Link from 'next/link';
 import { GoDotFill } from 'react-icons/go';
@@ -48,16 +51,16 @@ export default function Header() {
                 }}
 
                 modules={[Navigation, HashNavigation, Autoplay, Scrollbar]}
-                className="mySwiper h-[450px] md:h-screen"
+                className="mySwiper h-[450px] md:h-[calc(100vh-48px)]"
             >
 
                 <SwiperSlide>
 
-                    <div className="w-full   min-h-screen "
+                    <div className="w-full   min-h-[calc(100vh-48px)] "
 
                     >
                         <Image src={img1} alt='vsdv' className='h-full w-full' fill />
-                        <div className="flex items-center relative z-30 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/40">
+                        <div className="flex items-center relative z-30 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/10">
                             <div className="md:px-24  w-full 
               ">
                                 <h1 className="text-2xl  font-semibold uppercase  text-white  text-center  md:text-right  lg:text-[40px]">
@@ -80,11 +83,11 @@ export default function Header() {
                 </SwiperSlide>
                 <SwiperSlide>
 
-                    <div className="w-full   min-h-screen "
+                    <div className="w-full   min-h-[calc(100vh-48px)] "
 
                     >
                         <Image src={img2} alt='vsdv' className='h-full w-full' fill />
-                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/40">
+                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/10">
                             <div className=" md:px-24  w-full 
               ">
                                 <h1 className="text-2xl uppercase font-semibold  text-white  text-center  md:text-right  lg:text-[40px]">
@@ -105,11 +108,11 @@ export default function Header() {
                 </SwiperSlide>
                 <SwiperSlide>
 
-                    <div className="w-full   min-h-screen "
+                    <div className="w-full   min-h-[calc(100vh-48px)] "
 
                     >
                         <Image src={img3} alt='vsdv' className='h-full w-full' fill />
-                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/40">
+                        <div className="flex items-center relative z-20 min-h-[450px]  md:min-h-screen justify-between w-full bg-gray-900/10">
                             <div className="md:px-24  w-full 
               ">
                                 <h1 className="text-2xl uppercase font-semibold  text-white  text-center  md:text-right  lg:text-[40px]">
@@ -130,15 +133,15 @@ export default function Header() {
                 </SwiperSlide>
 
             </Swiper>
-            <div className="h-16 hidden md:flex  items-center  rounded-b-2xl  bg-[#3d3d3d] opacity-60 relative">
+            <div className="h-12  hidden md:flex  items-center  rounded-b-2xl  bg-[#3d3d3d] opacity-60 relative">
                 {/* Swiper will inject the scrollbar drag element here */}
                 <div className="custom-swiper-scrollbar w-[40%] h-1  rounded relative overflow-hidden"></div>
             </div>
-            <div className="absolute left-1/2 -translate-x-1/2 bottom-3 md:-bottom-[52px] z-30 flex items-center  mt-4  gap-3">
-                <button className="custom-prev cursor-pointer p-2 h-10 w-10 flex items-center justify-center bg-white rounded-full hover:text-white hover:bg-black transition-colors duration-300 font-bold shadow-xl">
+            <div className="absolute left-1/2 -translate-x-1/2 bottom-3 md:bottom-1.5 z-30 flex items-center  mt-4  gap-3">
+                <button className="custom-prev cursor-pointer p-1.5 h-9 w-9 flex items-center justify-center bg-white rounded-full hover:text-white hover:bg-black transition-colors duration-300 font-bold shadow-xl">
                     <FaChevronLeft size={18} />
                 </button>
-                <button className="custom-next cursor-pointer p-2 h-10 w-10 flex items-center justify-center bg-white rounded-full hover:text-white hover:bg-black transition-colors duration-300 font-bold shadow-xl">
+                <button className="custom-next cursor-pointer p-1.5 h-9 w-9 flex items-center justify-center bg-white rounded-full hover:text-white hover:bg-black transition-colors duration-300 font-bold shadow-xl">
                     <FaChevronRight size={18} />
                 </button>
             </div>

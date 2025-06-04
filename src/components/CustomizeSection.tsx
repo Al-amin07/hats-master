@@ -22,11 +22,15 @@ const CustomizeSection = () => {
                     <h2 className="text-4xl md:text-5xl  text-gray-700 mb-7">
                         CUSTOMIZE YOUR  STYLE
                     </h2>
-                    <p className="text-gray-700/80 mb-6 leading-relaxed">
-                        Whether you’re looking to outfit a team, promote your brand, or make a statement, our stock decoration options ensure your caps make a memorable impression. Choose from traditional direct embroidery options, embroidered patches, woven patches, or go bold with genuine and faux leather options for a touch of sophistication. For modern styles, our silicone and flexstyle patches provide a contemporary edge, while sublimated patches deliver vibrant, photo-quality detail.
+                    <p className="text-gray-800/90 mb-6 leading-relaxed">
+                        Whether you&apos;re building a fashion label, creating merch for your community, or launching a bold new line, Hatsmaster brings your vision to life, one stitch at a time. Our decoration options aren&apos;t just techniques; they’re tools to express identity.
                     </p>
-                    <p className="font-semibold text-gray-800/80">
-                        The possibilities are endless!
+                    <p className=" text-gray-800/90">
+                        Choose direct embroidery for timeless impact, or explore woven and embroidered patches for texture and craft. Want something bolder? Genuine and faux leather patches add richness, while silicone and flexstyle designs bring a clean, modern edge.
+                    </p>
+                    <p className='my-5 text-gray-800/90'>And when color and detail matter most, our sublimated patches deliver photo-quality clarity that turns heads.
+                    </p>
+                    <p className='font-semibold  text-gray-800/90'>Every brand has a story. We help you wear it.
                     </p>
                 </div>
             </div>

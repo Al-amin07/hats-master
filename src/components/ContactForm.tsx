@@ -39,6 +39,10 @@ export default function ContactForm() {
       className="  flex-1 max-w-2xl 
      mx-auto p-12"
     >
+      <div className=' max-w-3xl mx-auto'>
+
+        <h2 className="text-3xl md:text-4xl   uppercase  mb-8">how can we help you?</h2>
+      </div>
       <form onSubmit={handleForm} className="space-y-6">
         {/* Name & Email */}
         <div className="flex flex-col md:flex-row gap-4">

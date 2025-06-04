@@ -34,11 +34,12 @@ export default function AboutUsPge() {
                 <div className='flex-1'>
                     <h1 className='text-4xl md:text-5xl lg:text-6xl uppercase  mb-4 font-semibold'>Meet  The Team</h1>
                     <div className='space-y-3 pr-7'>
-                        <p className='text-sm text-slate-800'>Hats Master Cap Company is a family owned and operated business based in Burleigh on the Gold Coast.  Operating since 1992, we specialise in importing premium quality headwear & accessories. </p>
-                        <p className='text-sm text-slate-800'>Our products are of the highest quality and we pride ourselves on our wide customer base both here in Australia and overseas.  We are the preferred supplier to many of Australia’s most recognised brands, offering fast lead times, competitive pricing and low minimums.</p>
-                        <p className='text-sm text-slate-800'>Our belief is that you are only as good as your supplier which is why we have built strong and reliable relationships with our chosen factories. </p>
-                        <p className='text-sm text-slate-800'>Our friendly and experienced staff will ensure that all aspects of your order are looked after from the first sample approval to the final delivery of your stock. </p>
-                        <p className='text-sm text-slate-800'>Enquire now and bring your ideas to life!</p>
+                        <p className='text-sm text-slate-800'>Hatsmaster is a privately held headwear company based in Bangladesh, operating since MMXX. We specialize in the design, development, and sourcing of premium-quality hats, caps, beanies, scarves, and fashion headwear for global private label brands, retailers, and lifestyle companies. <br />
+                            As a trusted headwear supplier in Bangladesh, we take pride in offering custom cap manufacturing, OEM hat production, and private label headwear solutions that meet international standards in both style and compliance. </p>
+                        <p className='text-sm text-slate-800'>With our deep understanding of global headwear trends and technical expertise in structured caps, dad hats, bucket hats, trucker caps, and fashion beanies, we deliver scalable solutions for brands that demand more, from startup streetwear labels to established fashion retailers. Our production ecosystem includes fully compliant, ethically certified factories that guarantee quality, transparency, and reliability.</p>
+                        <p className='text-sm text-slate-800'>Your brand. Your vision. Our craftsmanship.
+                        </p>
+
                     </div>
                     <Link href={'/contact'}>
                         <Button variant={'outline'} className='hover:bg-black text-slate-600 hover:text-white transition-colors duration-500 mt-5 text-xs'>

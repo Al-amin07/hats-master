@@ -3,7 +3,7 @@ import c1 from '@/assets/certificate/c1.png'
 import c2 from '@/assets/certificate/c2.jpg'
 import c3 from '@/assets/certificate/c3.webp'
 import c4 from '@/assets/certificate/Certifications logo (3).jpg'
-import logo from '@/assets/logo/p1.webp'
+import logo from '@/assets/logo/p2.jpg'
 import Image from "next/image";
 import Link from "next/link";
 const images = [c1, c2, c3, c4]
@@ -41,7 +41,7 @@ export default function Certificate() {
           height={150}
           className="rounded-full mx-auto mb-4"
         />
-        <h4 className="text-lg font-bold mb-2">Hey there, I’m David!</h4>
+        <h4 className="text-lg font-bold mb-2">Hey there, I’m Gayen!</h4>
         <p className="text-sm text-gray-700 mb-4">
           I truly enjoy the headwear manufacturing industry because my work helps elevate my clients&apos; brands with high-quality, customized baseball caps.
         </p>
@@ -49,7 +49,7 @@ export default function Certificate() {
           If you have any questions about cap production or custom branding, feel free to contact me!
         </p>
         <Link href="/contact" className="bg-black border border-black text-white hover:bg-transparent hover:text-black px-4 py-2 rounded transition-all duration-500">
-          Contact US Now →
+          Let&apos;s Talk →
         </Link>
       </aside>
     </div>

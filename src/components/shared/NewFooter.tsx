@@ -85,7 +85,7 @@ export default function NewFooter() {
                 </div>
                 <div className="flex items-start gap-2">
                   <FaPhoneAlt className="mt-1 text-white" />
-                  <p>+8801611-247183</p>
+                  <p>+880 1611-247183</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <FaEnvelope className="mt-1 text-white" />
@@ -100,17 +100,18 @@ export default function NewFooter() {
                 Why Hats Master
               </h4>
               <p className="mt-2 text-white font-semibold">
-                Made in Bangladesh
+
+
               </p>
               <p className="text-sm text-gray-300 mt-2">
-                – Qualified labor force. <br />– Geographical proximity to main
-                Asian markets...
+                Ready to manufacture premium headwear with us?
               </p>
+              <p>Connect With Us</p>
               <Link
                 href={"/contact"}
                 className="mt-4 inline-block px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-all text-sm"
               >
-                REQUEST FREE SAMPLE
+                Free Samples Available
               </Link>
             </div>
           </div>
