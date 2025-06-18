@@ -3,7 +3,9 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import { Toaster } from 'sonner';
 import NewFooter from "@/components/shared/NewFooter";
-import WhatsAppIcon from "@/components/WhatsAppIcon";
+import FloatingChatFAB from "@/components/FloatingContactButton";
+// import WhatsAppIcon from "@/components/WhatsAppIcon";
+// import FloatingContactButtons from "@/components/FloatingContactButton";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -82,7 +84,9 @@ export default function RootLayout({
         {/* <Footer /> */}
         <NewFooter />
         <Toaster position="top-center" richColors />
-        <WhatsAppIcon />
+        {/* <WhatsAppIcon /> */}
+        <FloatingChatFAB />
+        {/* <FloatingContactButtons /> */}
       </body>
     </html>
   );
