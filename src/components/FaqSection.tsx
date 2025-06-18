@@ -56,8 +56,8 @@ export default function FAQSection() {
 
   return (
     <div>
-      <section className=" container mx-auto ">
-        <h2 className="text-2xl mb-8 md:text-3xl font-serif text-center ">
+      <section className=" max-w-3xl ml-auto ">
+        <h2 className="text-2xl mb-8 md:text-3xl font-serif text-left ">
           Frequently Asked Questions [FAQs]
 
         </h2>
@@ -88,7 +88,7 @@ export default function FAQSection() {
         <Accordion
           type="single"
           collapsible
-          className="max-w-3xl mx-auto"
+          className=" "
           defaultValue="item-1"
         >
           {

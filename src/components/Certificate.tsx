@@ -10,7 +10,7 @@ const images = [c1, c2, c3, c4]
 export default function Certificate() {
   return (
 
-    <div className="flex flex-col md:flex-row gap-8  max-w-7xl mx-auto ">
+    <div className="flex flex-col md:flex-row gap-8  container mx-auto ">
       {/* Main Content */}
       <div className="md:w-3/4 shadow-lg py-7 shadow-black/50">
         <h2 className="text-base mb-4 text-center px-8">

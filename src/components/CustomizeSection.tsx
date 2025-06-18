@@ -6,7 +6,7 @@ import img2 from '@/assets/about/CUSTOMIZE YOUR STYLE (1).jpg';
 const CustomizeSection = () => {
     return (
         <section className="">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 {/* Image */}
                 <div className="relative w-full h-[450px]">
                     <Image
