@@ -2,10 +2,6 @@
 import { slugify } from "@/service/slug";
 import Link from "next/link";
 import {
-  // FaFacebookF,
-  // FaTwitter,
-  // FaYoutube,
-  // FaLinkedinIn,
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,

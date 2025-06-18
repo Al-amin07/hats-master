@@ -36,7 +36,7 @@ export default function Navbar() {
 
   const resourcesLinks = [
     { href: "/process", label: "Our Process" },
-    { href: "/lead-payment", label: "Payment & Shipping" },
+    { href: "/lead-payment", label: "Our Logistics" },
   ];
   useEffect(() => {
     const handleScroll = () => {
@@ -174,7 +174,7 @@ export default function Navbar() {
                 </div>
                 {/* Resources */}
                 <div
-                  className={`absolute hidden  top-24 lg:top-20 left-[25%] md:left-[40%] w-[170px]  text-black/75 shadow-lg ${link.label === "RESOURCES" && "group-hover:flex"
+                  className={`absolute hidden  top-24 lg:top-20 left-[25%] md:left-[40%] w-[140px]  text-black/75 shadow-lg ${link.label === "RESOURCES" && "group-hover:flex"
                     }`}
                 >
                   <div className="flex flex-col  bg-gray-50 w-full">

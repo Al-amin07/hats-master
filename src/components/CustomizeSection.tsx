@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import img from '@/assets/about/c1.jpg';
+// import img from '@/assets/about/c1.jpg';
+import img2 from '@/assets/about/CUSTOMIZE YOUR STYLE (1).jpg';
+// import img3 from '@/assets/about/CUSTOMIZE YOUR STYLE (2).jpg';
 const CustomizeSection = () => {
     return (
         <section className="">
@@ -8,7 +10,7 @@ const CustomizeSection = () => {
                 {/* Image */}
                 <div className="relative w-full h-[450px]">
                     <Image
-                        src={img} // Save your image as /public/images/customize-style.png
+                        src={img2} // Save your image as /public/images/customize-style.png
                         alt="Hat embroidery machine"
                         layout="fill"
                         objectFit="cover"

@@ -37,7 +37,7 @@ export default function ContactForm() {
   return (
     <section
       className="  flex-1 max-w-2xl 
-     mx-auto p-12"
+     mx-auto p-12 border border-gray-300 rounded-lg shadow-lg bg-white dark:bg-gray-800 dark:text-white"
     >
       <div className=' max-w-3xl mx-auto'>
 

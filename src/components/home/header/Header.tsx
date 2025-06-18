@@ -57,7 +57,7 @@ export default function Header() {
                 }}
 
                 modules={[Navigation, HashNavigation, Autoplay, Scrollbar]}
-                className="mySwiper h-[450px] md:h-[calc(100vh-48px)]"
+                className="mySwiper max-w-[1400px] h-[450px] md:h-[calc(100vh-48px)]"
             >
 
                 <SwiperSlide>
@@ -77,7 +77,7 @@ export default function Header() {
                                 </h1>
 
                                 <Link href={'/process'} className='flex justify-center md:justify-between items-center gap-2.5 md:gap-0 max-w-[400px] lg:max-w-md  ml-auto mr-auto md:mr-0 mt-6  border p-3 md:p-4 rounded-md cursor-pointer text-white hover:bg-black  hover:border-black transition-colors duration-500'>
-                                    <h1 className='text-sm md:text-xl uppercase font-medium'>Consalt </h1> <span><GoDotFill size={20} /></span>
+                                    <h1 className='text-sm md:text-xl uppercase font-medium'>Consult </h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Design</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Produce</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Deliver</h1>
@@ -102,7 +102,7 @@ export default function Header() {
                                 </h1>
 
                                 <Link href={'/process'} className='flex justify-center md:justify-between items-center gap-2.5 md:gap-0 max-w-[400px] lg:max-w-md  ml-auto mr-auto md:mr-0 mt-6  border p-3 md:p-4 rounded-md cursor-pointer text-white hover:bg-black  hover:border-black transition-colors duration-500'>
-                                    <h1 className='text-sm md:text-xl uppercase font-medium'>Consalt </h1> <span><GoDotFill size={20} /></span>
+                                    <h1 className='text-sm md:text-xl uppercase font-medium'>Consult </h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Design</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Produce</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Deliver</h1>
@@ -127,7 +127,7 @@ export default function Header() {
                                 </h1>
 
                                 <Link href={'/process'} className='flex justify-center md:justify-between items-center gap-2.5 md:gap-0 max-w-[400px] lg:max-w-md  ml-auto mr-auto md:mr-0 mt-6  border p-3 md:p-4 rounded-md cursor-pointer text-white hover:bg-black  hover:border-black transition-colors duration-500'>
-                                    <h1 className='text-sm md:text-xl uppercase font-medium'>Consalt </h1> <span><GoDotFill size={20} /></span>
+                                    <h1 className='text-sm md:text-xl uppercase font-medium'>Consult </h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Design</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Produce</h1> <span><GoDotFill size={20} /></span>
                                     <h1 className='text-sm md:text-xl uppercase font-medium'>Deliver</h1>

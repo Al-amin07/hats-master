@@ -19,7 +19,7 @@ const details = [
 ];
 export default function GetInTouch() {
     return (
-        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className='bg-[#F6EFE4] max-w-lg p-8 md:p-12 lg:px-20 '>
+        <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className='bg-[#F6EFE4] max-w-lg p-8 md:p-12 lg:px-20 hover:shadow-lg hover:scale-105 cursor-pointer transition-all duration-500'>
             <h2 className='text-3xl md:text-4xl   uppercase  mb-8 '>Get in Touch</h2>
             <div>
                 {

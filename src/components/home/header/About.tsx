@@ -9,8 +9,7 @@ export default function About() {
           About HATSMASTER
         </h1>
         <p className="">
-          We’re more than a headwear manufacturer—we’re storytellers in every
-          stitch. From street-ready caps to timeless styles, we help brands
+          We’re more than a headwear manufacturer; we craft stories in every stitch.  From street-ready caps to timeless styles, we help brands
           stand out. As a reliable custom cap supplier, we blend craftsmanship
           with flexibility to match your vision .
         </p>
