@@ -57,7 +57,7 @@ export default function Header() {
                 }}
 
                 modules={[Navigation, HashNavigation, Autoplay, Scrollbar]}
-                className="mySwiper max-w-[1400px] h-[450px] md:h-[calc(100vh-48px)]"
+                className="mySwiper max-w-[1600px] h-[450px] md:h-[calc(100vh-48px)]"
             >
 
                 <SwiperSlide>
