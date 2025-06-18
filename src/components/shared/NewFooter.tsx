@@ -137,11 +137,7 @@ export default function NewFooter() {
         </div>
 
         {/* Legal Links for Hats Master */}
-        <div className="text-xs text-gray-500 mt-4 text-center space-x-2">
-          <span className="text-gray-300">Privacy Policy</span>
-          <span className="text-red-500">–</span>
-          <span className="text-gray-300">Online Complaint Portal</span>
-        </div>
+
 
       </div>
     </footer>
