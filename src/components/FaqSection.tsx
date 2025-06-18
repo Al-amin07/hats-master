@@ -56,7 +56,7 @@ export default function FAQSection() {
 
   return (
     <div>
-      <section className=" max-w-3xl ml-auto ">
+      <section className=" container  mx-auto ">
         <h2 className="text-2xl mb-8 md:text-3xl font-serif text-left ">
           Frequently Asked Questions [FAQs]
 
@@ -85,24 +85,50 @@ export default function FAQSection() {
             </div>
           ))}
         </div> */}
-        <Accordion
-          type="single"
-          collapsible
-          className=" "
-          defaultValue="item-1"
-        >
-          {
-            hatsmasterFAQs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index + 1}`}>
-                <AccordionTrigger className="cursor-pointer">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent>{faq.answer}</AccordionContent>
-              </AccordionItem>
-            ))
-          }
+        <div className="flex w-full  flex-col lg:flex-row gap-6 md:gap-8 lg:gap-12 mt-8">
+          <div className="flex-1">
+            <Accordion
+              type="single"
+              collapsible
+              className=" "
+              defaultValue="item-1"
+            >
+              {
+                hatsmasterFAQs.slice(0, 5).map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index + 1}`}>
+                    <AccordionTrigger className="cursor-pointer">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent>{faq.answer}</AccordionContent>
+                  </AccordionItem>
+                ))
+              }
 
-        </Accordion>
+            </Accordion>
+          </div>
+          <div className="flex-1">
+            <Accordion
+              type="single"
+              collapsible
+              className=" "
+              defaultValue="item-1"
+            >
+              {
+                hatsmasterFAQs.slice(5, 10).map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index + 1}`}>
+                    <AccordionTrigger className="cursor-pointer">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent>{faq.answer}</AccordionContent>
+                  </AccordionItem>
+                ))
+              }
+
+            </Accordion>
+          </div>
+
+        </div>
+
       </section>
     </div>
   );

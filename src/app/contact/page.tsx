@@ -21,14 +21,15 @@ export default function ContactPage() {
     <div className='mt-28 space-y-16  '>
 
 
-      <div className='flex flex-col md:flex-row  '>
+      <div className='container px-5 md:px-0 mx-auto flex flex-col gap-10 md:flex-row  '>
         <GetInTouch />
         <ContactForm />
+
       </div>
-      <div className='px-5 mt-12 space-y-16 container md:px-8 lg:px-16 mx-auto'>
-        <FAQSection />
-        {/* <ContactInfo /> */}
-      </div>
+
+      <FAQSection />
+      {/* <ContactInfo /> */}
+
     </div>
   )
 }

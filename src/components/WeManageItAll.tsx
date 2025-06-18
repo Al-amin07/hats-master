@@ -20,7 +20,7 @@ const details = [
 export default function WeManageItAll() {
 
   return (
-    <section className=" container mx-auto">
+    <section className=" containerw mx-auto">
       <h2 className="text-4xl md:text-5xl lg:text-6xl uppercase  mb-6">We manage it All</h2>
 
       {/* Service Cards */}
