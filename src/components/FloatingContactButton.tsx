@@ -19,7 +19,7 @@ export default function FloatingChatFAB() {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <a
-                                href="tel:+8801234567890"
+                                href="tel:+8801611247183"
                                 className="bg-green-400 p-4 rounded-full shadow-lg transition hover:scale-110"
                                 title="Call"
                             >
@@ -35,7 +35,7 @@ export default function FloatingChatFAB() {
                     <Tooltip>
                         <TooltipTrigger asChild>
                             <a
-                                href="https://wa.me/8801234567890"
+                                href="https://wa.me/8801611247183"
                                 className="bg-green-500 p-3.5 rounded-full shadow-lg transition hover:scale-110"
                                 title="WhatsApp"
                             >
