@@ -23,7 +23,7 @@ export default function NewFooter() {
     <footer className="bg-[#1a232c] text-white px-6 md:px-20 py-16">
       <div className="max-w-7xl mx-auto">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between border-b border-white/10 pb-8">
+        <div className="flex flex-col md:flex-row justify-between border-b border-white/60 pb-8">
           {/* Left Logo and Desc */}
           <div className="md:w-1/3 mb-8 md:mb-0">
             <h1 className="text-2xl mb-2 font-bold uppercase text-white">
