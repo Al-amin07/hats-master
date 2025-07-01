@@ -1,15 +1,18 @@
 "use client";
 import { useState } from "react";
-import { FaPhoneAlt, FaWhatsapp, FaTimes, FaCommentAlt } from "react-icons/fa";
+import { FaWhatsapp, FaTimes, FaCommentAlt } from "react-icons/fa";
+import { IoLogoWechat } from "react-icons/io5";
+
 import {
     Tooltip,
     TooltipContent,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
+import Image from "next/image";
 
 export default function FloatingChatFAB() {
     const [open, setOpen] = useState(false);
-
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <div className="fixed bottom-7 right-7 z-50 flex flex-col items-end space-y-3">
             {/* Conditional Buttons */}
@@ -17,17 +20,60 @@ export default function FloatingChatFAB() {
                 <>
 
                     <Tooltip>
-                        <TooltipTrigger asChild>
+                        {/* <TooltipTrigger asChild>
                             <a
                                 href="tel:+8801611247183"
-                                className="bg-green-400 p-4 rounded-full shadow-lg transition hover:scale-110"
+                                className="bg-green-400 p-3 rounded-full shadow-2xl transition hover:scale-110"
                                 title="Call"
                             >
-                                <FaPhoneAlt className="text-white" size={20} />
+                                <IoLogoWechat className="text-white" size={25} />
                             </a>
-                        </TooltipTrigger>
+                        </TooltipTrigger> */}
+                        <div>
+                            {/* Tooltip wrapper */}
+                            <div className="relative inline-block">
+                                <TooltipTrigger asChild>
+
+                                    <button
+                                        onClick={() => setIsOpen(true)}
+                                        className="bg-green-500 p-3 rounded-full shadow-2xl transition hover:scale-110"
+                                        title="Add me on WeChat"
+                                    >
+                                        <IoLogoWechat className="text-white" size={25} />
+                                    </button>
+                                </TooltipTrigger>
+                            </div>
+
+                            {/* Modal */}
+                            {isOpen && (
+                                <div
+                                    className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    <div
+                                        className="bg-white rounded-lg p-6 max-w-sm w-full text-center relative"
+                                        onClick={(e) => e.stopPropagation()}
+                                    >
+                                        <h2 className="text-xl font-semibold mb-4">Scan to Add on WeChat</h2>
+                                        <Image
+                                            src="/wechat-qr.png"
+                                            alt="WeChat QR Code"
+                                            fill
+                                            className="mx-auto mb-4"
+                                        />
+                                        <p className="text-gray-700">WeChat ID: <strong>your_wechat_id</strong></p>
+                                        <button
+                                            className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+                                            onClick={() => setIsOpen(false)}
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                         <TooltipContent side="left" >
-                            <p>Telephone</p>
+                            <p>WeChat</p>
                         </TooltipContent>
                     </Tooltip>
 
@@ -43,7 +89,7 @@ export default function FloatingChatFAB() {
                             </a>
                         </TooltipTrigger>
                         <TooltipContent side="left" >
-                            <p>Whats App</p>
+                            <p>WhatsApp</p>
                         </TooltipContent>
                     </Tooltip>
 
@@ -74,14 +120,15 @@ export default function FloatingChatFAB() {
                     <TooltipTrigger asChild>
                         <button
                             onClick={() => setOpen(true)}
-                            className="bg-purple-500 p-4 rounded-full shadow-lg transition hover:scale-110"
+                            className="bg-white  p-4 rounded-full shadow-lg transition hover:scale-110"
                             title="Chat"
                         >
-                            <FaCommentAlt className="text-white" size={20} />
+                            <FaCommentAlt className="text-black" size={20} />
                         </button>
                     </TooltipTrigger>
                     <TooltipContent side="left" >
-                        <p>Show</p>
+                        <p>We&apos;re Online! <br />
+                            How may I help you today?</p>
                     </TooltipContent>
                 </Tooltip>
 

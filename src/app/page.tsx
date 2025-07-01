@@ -8,7 +8,7 @@ import MenuFacture from "@/components/home/MenuFacture";
 import SourcingSection from "@/components/home/Sourceing";
 import ClientSection from "@/components/home/ClientSection";
 export const metadata = {
-  title: 'Hats Master | Your Trusted Sourcing Agent for Premium Headwear',
+  title: 'HATSMASTER | Your Trusted Sourcing Partner for Premium Headwear',
   description:
     'Discover premium hats and custom headwear sourcing from Bangladesh. Your international sourcing agent for quality caps and accessories.',
   keywords: [
@@ -44,7 +44,7 @@ export const metadata = {
 };
 export default function Home() {
   return (
-    <div className="space-y-[70px]  mx-auto">
+    <div className="space-y-[50px]  mx-auto">
       <Header />
       <About />
       <ProductSection />

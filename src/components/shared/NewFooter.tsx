@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { FaFacebookF, FaLinkedin } from "react-icons/fa6";
 const links = [
   { id: 11, name: "Baseball Cap" },
   { id: 13, name: "Snapback Cap" },
@@ -88,7 +89,7 @@ export default function NewFooter() {
               <div className="text-sm mt-2 space-y-3 text-gray-300">
                 <div className="flex items-start gap-2">
                   <FaMapMarkerAlt className="mt-1 text-white" />
-                  <p>House- 10, Road- 12, Sector- 04, Uttara, Dhaka, Bangladesh.</p>
+                  <p>House- 10, Road- 12, Sector- 04,<br /> Uttara, Dhaka, Bangladesh.</p>
                 </div>
                 <div className="flex items-start gap-2">
                   <FaPhoneAlt className="mt-1 text-white" />
@@ -97,6 +98,12 @@ export default function NewFooter() {
                 <div className="flex items-start gap-2">
                   <FaEnvelope className="mt-1 text-white" />
                   <p>info@hatsmaster.com</p>
+                </div>
+                <div className="flex space-x-4 text-xl">
+                  <Link href={"https://www.linkedin.com/company/hatsmaster/"} target="_blank" className="p-1 bg-gray-800 border rounded-md hover:bg-white hover:text-black transition-all duration-300"><FaFacebookF /></Link>
+                  <Link href={"https://www.linkedin.com/company/hatsmaster/"} target="_blank" className="p-1 bg-gray-800 border rounded-md hover:bg-white hover:text-black transition-all duration-300">  <FaLinkedin /></Link>
+
+
                 </div>
               </div>
             </div>
@@ -113,7 +120,7 @@ export default function NewFooter() {
               <p className="text-sm text-gray-300 mt-2">
                 Ready to manufacture premium headwear with us?
               </p>
-              <p>Connect With Us</p>
+              <p className="mt-8">Connect With Us</p>
               <Link
                 href={"/contact"}
                 className="mt-4 inline-block px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-all text-sm"
